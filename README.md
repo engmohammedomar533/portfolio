@@ -1,73 +1,57 @@
-# React + TypeScript + Vite
+# Mohammed Younis - Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio! This is a modern, responsive single-page web application showcasing my journey as a Senior Systems Administrator actively transitioning to Cloud & DevOps engineering.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
+*(Add your live hosting link here once deployed)*
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Tech Stack
+This project is built with:
+- **[React](https://reactjs.org/)** - Frontend library
+- **[TypeScript](https://www.typescriptlang.org/)** - For type safety
+- **[Vite](https://vitejs.dev/)** - Next Generation Frontend Tooling
+- **[Tailwind CSS](https://tailwindcss.com/)** - Utility-first CSS framework
+- **[Lucide React](https://lucide.dev/)** - Beautiful, consistent icons
 
-## React Compiler
+## 👨‍💻 About the Project
+This portfolio highlights my 10+ years of enterprise experience, featuring:
+- **About Me:** My background and focus on cloud infrastructure.
+- **Experience:** My professional timeline and key roles (Osos Engineering, etc.).
+- **Featured Architecture:** Case studies of major projects like Osos PMS and Enterprise IT Infrastructure deployments.
+- **Skills:** My technical arsenal across Cloud, DevOps, Scripting, and Infrastructure.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ⚙️ Getting Started
 
-## Expanding the ESLint configuration
+### Prerequisites
+Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Installation
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/engmohammedomar533/portfolio.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd portfolio
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Running the Development Server
+```bash
+npm run dev
+```
+Open `http://localhost:5173` in your browser to view the application.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Building for Production
+```bash
+npm run build
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📬 Contact
+- **Email:** engmohammedomar@hotmail.com
+- **LinkedIn:** [Mohammed Younis](https://linkedin.com/in/mohammed-younis-my)
+- **GitHub:** [engmohammedomar533](https://github.com/engmohammedomar533)
