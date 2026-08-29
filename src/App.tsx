@@ -418,23 +418,23 @@ function App() {
                 <div>
                   <h4 className="text-sm font-bold uppercase text-muted tracking-wider mb-3">Cloud & DevOps</h4>
                   <div className="flex flex-wrap gap-2">
-                    {['Linux', 'Docker', 'DigitalOcean', 'Git', 'Vercel', 'Azure (AZ-900)'].map(s => (
+                    {['Microsoft Azure', 'AWS', 'Linux', 'Docker', 'DigitalOcean', 'Git', 'Vercel'].map(s => (
                       <span key={s} className="px-3 py-1 bg-surface border border-slate-700 rounded-full text-sm">{s}</span>
                     ))}
                   </div>
                 </div>
                 <div>
-                  <h4 className="text-sm font-bold uppercase text-muted tracking-wider mb-3">Scripting & Coding</h4>
+                  <h4 className="text-sm font-bold uppercase text-muted tracking-wider mb-3">Software Development</h4>
                   <div className="flex flex-wrap gap-2">
-                    {['Python', 'PowerShell', 'Bash', 'SQL', 'React', 'TypeScript'].map(s => (
+                    {['Python', 'Django', 'FastAPI', 'React.js', 'JavaScript', 'HTML/CSS', 'PostgreSQL', 'SQL'].map(s => (
                       <span key={s} className="px-3 py-1 bg-surface border border-slate-700 rounded-full text-sm">{s}</span>
                     ))}
                   </div>
                 </div>
                 <div>
-                  <h4 className="text-sm font-bold uppercase text-muted tracking-wider mb-3">Infrastructure</h4>
+                  <h4 className="text-sm font-bold uppercase text-muted tracking-wider mb-3">Systems & Infrastructure</h4>
                   <div className="flex flex-wrap gap-2">
-                    {['Windows Server', 'Active Directory', 'Hyper-V', 'VMware', 'Networking', 'Disaster Recovery'].map(s => (
+                    {['Windows Server', 'Active Directory', 'Hyper-V', 'VMware', 'Networking', 'Disaster Recovery', 'PowerShell'].map(s => (
                       <span key={s} className="px-3 py-1 bg-surface border border-slate-700 rounded-full text-sm">{s}</span>
                     ))}
                   </div>
