@@ -149,15 +149,15 @@ function App() {
           
 
             {/* Project 3 */}
-            <div className="bg-surface rounded-xl p-8 border border-slate-700 hover:border-primary/50 transition-colors group relative overflow-hidden md:col-span-2">
+            <div className="bg-surface rounded-xl p-8 border border-slate-700 hover:border-primary/50 transition-colors group relative overflow-hidden">
               <div className="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
                 <Shield size={100} />
               </div>
               <h3 className="text-2xl font-bold mb-3">Enterprise IT Infrastructure Deployment</h3>
-              <p className="text-muted mb-6 max-w-3xl">
+              <p className="text-muted mb-6">
                 Comprehensive deployment of an enterprise-grade IT infrastructure. Features a fully segmented Omada SDN network, Active Directory (AD DS) configuration for secure file services, and a resilient 4-layer Disaster Recovery strategy including Bare Metal restores and RAID software mirroring.
               </p>
-              <div className="flex flex-wrap gap-6 mb-8">
+              <div className="space-y-3 mb-8">
                 <div className="flex items-center gap-3 text-sm">
                   <Server size={16} className="text-primary"/>
                   <span>Windows Server 2025 & AD DS</span>
@@ -174,6 +174,34 @@ function App() {
               <a href="https://github.com/engmohammedomar533/Enterprise-IT-Infrastructure-Deployment" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-primary font-medium hover:underline">
                 View Source on GitHub <ExternalLink size={16}/>
               </a>
+            </div>
+
+            {/* Project 4 */}
+            <div className="bg-surface rounded-xl p-8 border border-slate-700 hover:border-primary/50 transition-colors group relative overflow-hidden">
+              <div className="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
+                <Cloud size={100} />
+              </div>
+              <h3 className="text-2xl font-bold mb-3">Makkah HQ Cloud Network Migration</h3>
+              <p className="text-muted mb-6">
+                Remotely migrated and managed the entire network infrastructure for the main Makkah headquarters. Transitioned 50+ end-users to a centralized Ruijie Cloud architecture managing 9 APs, 5 switches, and edge routing.
+              </p>
+              <div className="space-y-3 mb-8">
+                <div className="flex items-center gap-3 text-sm">
+                  <Cloud size={16} className="text-primary"/>
+                  <span>Ruijie Cloud Management</span>
+                </div>
+                <div className="flex items-center gap-3 text-sm">
+                  <Server size={16} className="text-primary"/>
+                  <span>Remote Enterprise Provisioning</span>
+                </div>
+                <div className="flex items-center gap-3 text-sm">
+                  <Shield size={16} className="text-primary"/>
+                  <span>High-Capacity Hardware (APs/Switches)</span>
+                </div>
+              </div>
+              <div className="inline-flex items-center gap-2 text-green-400/80 font-medium px-3 py-1.5 bg-green-400/10 rounded-full text-sm">
+                <Cloud size={14}/> 100% Cloud Managed
+              </div>
             </div>
           </div>
         </section>
