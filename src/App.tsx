@@ -271,7 +271,28 @@ function App() {
                     <li>Managed virtualization platforms including VMware and Hyper-V, ensuring high availability.</li>
                     <li>Implemented and maintained comprehensive backup and disaster recovery solutions.</li>
                     <li>Troubleshot network and system issues ensuring maximum uptime and business continuity.</li>
-                    <li>Served as primary technical contact for all IT-related operations and vendor communications.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Job 5 */}
+            <div className="relative pl-8 md:pl-0">
+              <div className="hidden md:block absolute left-1/4 top-0 bottom-0 w-px bg-surface -ml-px"></div>
+              <div className="md:grid md:grid-cols-4 md:gap-8 items-start">
+                <div className="mb-4 md:mb-0 md:text-right md:pr-12 relative">
+                  <div className="hidden md:block absolute right-0 top-1.5 w-3 h-3 bg-slate-600 rounded-full translate-x-1.5 ring-4 ring-background"></div>
+                  <h4 className="font-bold text-lg">Independent Consultant</h4>
+                  <p className="text-sm text-muted">Jan 2017 - Jan 2024</p>
+                </div>
+                <div className="md:col-span-3 bg-surface/50 p-6 rounded-xl border border-slate-800/50">
+                  <h3 className="text-xl font-bold mb-1">Freelance IT & Security Systems Engineer</h3>
+                  <p className="text-muted text-sm mb-4">Makkah, Saudi Arabia</p>
+                  <ul className="space-y-2 text-sm text-slate-400 list-disc list-inside">
+                    <li>Directed large-scale CCTV and integrated security system installations across 300+ hotels and commercial buildings.</li>
+                    <li>Provided comprehensive IT support and network troubleshooting (LAN/WLAN) for over 100 enterprise facilities.</li>
+                    <li>Maintained and repaired servers, laptops, and printers to diagnose hardware/software issues and minimize downtime.</li>
+                    <li>Managed hotel operations, staff coordination, and guest services during high-pressure peak Umrah seasons.</li>
                   </ul>
                 </div>
               </div>
