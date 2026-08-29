@@ -40,15 +40,12 @@ function App() {
               Specializing in Linux, Windows Server, Networking, and deploying full-stack 
               SaaS architectures on robust cloud environments (DigitalOcean, Azure).
             </p>
-            <div className="flex flex-wrap gap-4 pt-4">
+            <div className="flex gap-4 pt-4">
               <a href="#contact" className="flex items-center gap-2 px-6 py-3 bg-primary text-background font-bold rounded hover:bg-sky-300 transition-all">
                 <Mail size={20}/> Hire Me
               </a>
               <a href="/Resume.pdf" className="flex items-center gap-2 px-6 py-3 bg-surface text-text font-bold rounded hover:bg-slate-700 transition-all border border-slate-700">
                 <Download size={20}/> Download CV
-              </a>
-              <a href="/Certificates.zip" download className="flex items-center gap-2 px-6 py-3 bg-surface text-text font-bold rounded hover:bg-slate-700 transition-all border border-slate-700">
-                <GraduationCap size={20}/> Certificates
               </a>
             </div>
             <div className="flex gap-6 pt-6 text-muted">
@@ -317,31 +314,113 @@ function App() {
                 <h2 className="text-2xl font-bold">Certifications & Training</h2>
               </div>
               <div className="space-y-4">
+                {/* Azure */}
                 <div className="flex items-start gap-4 p-4 bg-surface rounded-lg border border-slate-800">
                   <Shield className="text-primary shrink-0 mt-1" size={20}/>
-                  <div>
+                  <div className="flex-1">
                     <h4 className="font-bold">Azure Fundamentals (AZ-900)</h4>
                     <p className="text-sm text-muted">In Progress / Exam Scheduled</p>
                   </div>
                 </div>
+                
+                {/* Docker */}
                 <div className="flex items-start gap-4 p-4 bg-surface/50 rounded-lg border border-slate-800/50">
                   <Shield className="text-slate-400 shrink-0 mt-1" size={20}/>
-                  <div>
+                  <div className="flex-1">
                     <h4 className="font-bold">Docker & Linux Admin I & II</h4>
                     <p className="text-sm text-muted">Completed via SCAL Academy</p>
                   </div>
                 </div>
+                
+                {/* Microsoft Certs */}
                 <div className="flex items-start gap-4 p-4 bg-surface/50 rounded-lg border border-slate-800/50">
-                  <Shield className="text-slate-400 shrink-0 mt-1" size={20}/>
-                  <div>
-                    <h4 className="font-bold">MCSE & MCSA</h4>
-                    <p className="text-sm text-muted">Cloud Platform, Infrastructure, Windows Server 2012</p>
+                  <Shield className="text-primary shrink-0 mt-1" size={20}/>
+                  <div className="flex-1">
+                    <div className="flex justify-between items-start gap-2">
+                      <h4 className="font-bold">MCSE: Cloud Platform & Infrastructure</h4>
+                      <a href="/Certificates/Microsoft Certified Solutions Expert Cloud Platform and Infrastructure Charter Member.pdf" download className="text-primary hover:text-sky-300 transition-colors flex items-center gap-1 text-sm bg-slate-800/50 px-2 py-1 rounded border border-slate-700">
+                        <Download size={14}/> PDF
+                      </a>
+                    </div>
+                    <p className="text-sm text-muted">Microsoft Certified Solutions Expert</p>
                   </div>
                 </div>
+
+                <div className="flex items-start gap-4 p-4 bg-surface/50 rounded-lg border border-slate-800/50">
+                  <Shield className="text-primary shrink-0 mt-1" size={20}/>
+                  <div className="flex-1">
+                    <div className="flex justify-between items-start gap-2">
+                      <h4 className="font-bold">MCSE: Server Infrastructure</h4>
+                      <a href="/Certificates/Microsoft Certified Solutions Expert Server Infrastructure.pdf" download className="text-primary hover:text-sky-300 transition-colors flex items-center gap-1 text-sm bg-slate-800/50 px-2 py-1 rounded border border-slate-700">
+                        <Download size={14}/> PDF
+                      </a>
+                    </div>
+                    <p className="text-sm text-muted">Microsoft Certified Solutions Expert</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4 p-4 bg-surface/50 rounded-lg border border-slate-800/50">
+                  <Shield className="text-primary shrink-0 mt-1" size={20}/>
+                  <div className="flex-1">
+                    <div className="flex justify-between items-start gap-2">
+                      <h4 className="font-bold">MCSA: Windows Server 2012</h4>
+                      <a href="/Certificates/MCSA Windows Server 2012.pdf" download className="text-primary hover:text-sky-300 transition-colors flex items-center gap-1 text-sm bg-slate-800/50 px-2 py-1 rounded border border-slate-700">
+                        <Download size={14}/> PDF
+                      </a>
+                    </div>
+                    <p className="text-sm text-muted">Microsoft Certified Solutions Associate</p>
+                  </div>
+                </div>
+
                 <div className="flex items-start gap-4 p-4 bg-surface/50 rounded-lg border border-slate-800/50">
                   <Shield className="text-slate-400 shrink-0 mt-1" size={20}/>
-                  <div>
-                    <h4 className="font-bold">Certified Ethical Hacker (CEH v8)</h4>
+                  <div className="flex-1">
+                    <div className="flex justify-between items-start gap-2">
+                      <h4 className="font-bold">MTA: Networking Fundamentals</h4>
+                      <a href="/Certificates/MTA Networking Fundamentals.pdf" download className="text-primary hover:text-sky-300 transition-colors flex items-center gap-1 text-sm bg-slate-800/50 px-2 py-1 rounded border border-slate-700">
+                        <Download size={14}/> PDF
+                      </a>
+                    </div>
+                    <p className="text-sm text-muted">Microsoft Technology Associate</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4 p-4 bg-surface/50 rounded-lg border border-slate-800/50">
+                  <Shield className="text-slate-400 shrink-0 mt-1" size={20}/>
+                  <div className="flex-1">
+                    <div className="flex justify-between items-start gap-2">
+                      <h4 className="font-bold">MTA: Security Fundamentals</h4>
+                      <a href="/Certificates/MTA Security Fundamentals.pdf" download className="text-primary hover:text-sky-300 transition-colors flex items-center gap-1 text-sm bg-slate-800/50 px-2 py-1 rounded border border-slate-700">
+                        <Download size={14}/> PDF
+                      </a>
+                    </div>
+                    <p className="text-sm text-muted">Microsoft Technology Associate</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4 p-4 bg-surface/50 rounded-lg border border-slate-800/50">
+                  <Shield className="text-slate-400 shrink-0 mt-1" size={20}/>
+                  <div className="flex-1">
+                    <div className="flex justify-between items-start gap-2">
+                      <h4 className="font-bold">Microsoft Certified Professional</h4>
+                      <a href="/Certificates/Microsoft Certified Professional.pdf" download className="text-primary hover:text-sky-300 transition-colors flex items-center gap-1 text-sm bg-slate-800/50 px-2 py-1 rounded border border-slate-700">
+                        <Download size={14}/> PDF
+                      </a>
+                    </div>
+                    <p className="text-sm text-muted">MCP Certification</p>
+                  </div>
+                </div>
+                
+                {/* CEH */}
+                <div className="flex items-start gap-4 p-4 bg-surface/50 rounded-lg border border-slate-800/50">
+                  <Shield className="text-slate-400 shrink-0 mt-1" size={20}/>
+                  <div className="flex-1">
+                    <div className="flex justify-between items-start gap-2">
+                      <h4 className="font-bold">Certified Ethical Hacker (CEH v8)</h4>
+                      <a href="/Certificates/Certified Ethical Hacker V8.pdf" download className="text-primary hover:text-sky-300 transition-colors flex items-center gap-1 text-sm bg-slate-800/50 px-2 py-1 rounded border border-slate-700">
+                        <Download size={14}/> PDF
+                      </a>
+                    </div>
                     <p className="text-sm text-muted">EC-Council</p>
                   </div>
                 </div>
