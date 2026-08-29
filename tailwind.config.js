@@ -1,5 +1,6 @@
-﻿/** @type {import('tailwindcss').Config} */
+/** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: 'class',
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -7,11 +8,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: '#0f172a',
-        surface: '#1e293b',
-        primary: '#38bdf8', // sky-400
-        text: '#f8fafc',
-        muted: '#94a3b8'
+        background: 'var(--background)',
+        surface: 'var(--surface)',
+        primary: 'var(--primary)',
+        text: 'var(--text)',
+        muted: 'var(--muted)',
+        border: 'var(--border)',
+        card: 'var(--card)',
       }
     },
   },

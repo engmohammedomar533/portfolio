@@ -1,11 +1,22 @@
-import { Server, Shield, Cloud, Terminal, ExternalLink, Mail, Download, Briefcase, GraduationCap, Lock } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { Server, Shield, Cloud, Terminal, ExternalLink, Mail, Download, Briefcase, GraduationCap, Lock, Sun, Moon } from 'lucide-react';
 
 function App() {
+  const [isDark, setIsDark] = useState(true);
+
+  useEffect(() => {
+    if (isDark) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  }, [isDark]);
+
   return (
-    <div className="min-h-screen bg-background text-text selection:bg-primary selection:text-background">
+    <div className="min-h-screen bg-background text-text selection:bg-primary selection:text-background transition-colors duration-300">
       
       {/* Navbar */}
-      <nav className="fixed w-full top-0 z-50 bg-background/80 backdrop-blur-sm border-b border-surface">
+      <nav className="fixed w-full top-0 z-50 bg-background/80 backdrop-blur-sm border-b border-surface transition-colors duration-300">
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
           <span className="font-bold text-xl tracking-tight"><span className="text-primary">&gt;_</span> Younis</span>
           <div className="hidden md:flex gap-6 text-sm font-medium text-muted">
@@ -14,9 +25,18 @@ function App() {
             <a href="#projects" className="hover:text-primary transition-colors">Projects</a>
             <a href="#skills" className="hover:text-primary transition-colors">Skills</a>
           </div>
-          <a href="#contact" className="px-4 py-2 bg-primary text-background font-semibold rounded hover:bg-sky-300 transition-colors">
-            Contact Me
-          </a>
+          <div className="flex items-center gap-4">
+            <button 
+              onClick={() => setIsDark(!isDark)}
+              className="p-2 text-muted hover:text-primary transition-colors bg-surface rounded-full border border-border"
+              aria-label="Toggle Theme"
+            >
+              {isDark ? <Sun size={18}/> : <Moon size={18}/>}
+            </button>
+            <a href="#contact" className="hidden md:block px-4 py-2 bg-primary text-background font-semibold rounded hover:bg-sky-300 transition-colors">
+              Contact Me
+            </a>
+          </div>
         </div>
       </nav>
 
@@ -44,7 +64,7 @@ function App() {
               <a href="#contact" className="flex items-center gap-2 px-6 py-3 bg-primary text-background font-bold rounded hover:bg-sky-300 transition-all">
                 <Mail size={20}/> Hire Me
               </a>
-              <a href="/Certificates/Mohammed_Younis.pdf" className="flex items-center gap-2 px-6 py-3 bg-surface text-text font-bold rounded hover:bg-slate-700 transition-all border border-slate-700" target="_blank" rel="noreferrer">
+              <a href="/Certificates/Mohammed_Younis.pdf" className="flex items-center gap-2 px-6 py-3 bg-surface text-text font-bold rounded hover:bg-slate-700 transition-all border border-border" target="_blank" rel="noreferrer">
                 <Download size={20}/> Download CV
               </a>
             </div>
@@ -60,7 +80,7 @@ function App() {
         </section>
 
         {/* Highlight Stats */}
-        <section className="border-y border-surface bg-slate-900/50">
+        <section className="border-y border-surface bg-card">
           <div className="max-w-6xl mx-auto px-6 py-12 grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="space-y-2">
               <h3 className="text-4xl font-bold text-primary">10+</h3>
@@ -90,7 +110,7 @@ function App() {
           
           <div className="grid md:grid-cols-2 gap-8">
             {/* Project 1 */}
-            <div className="bg-surface rounded-xl p-8 border border-slate-700 hover:border-primary/50 transition-colors group relative overflow-hidden">
+            <div className="bg-surface rounded-xl p-8 border border-border hover:border-primary/50 transition-colors group relative overflow-hidden">
               <div className="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
                 <Cloud size={100} />
               </div>
@@ -119,7 +139,7 @@ function App() {
             </div>
 
             {/* Project 2 */}
-            <div className="bg-surface rounded-xl p-8 border border-slate-700 hover:border-primary/50 transition-colors group relative overflow-hidden">
+            <div className="bg-surface rounded-xl p-8 border border-border hover:border-primary/50 transition-colors group relative overflow-hidden">
               <div className="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
                 <Server size={100} />
               </div>
@@ -149,7 +169,7 @@ function App() {
           
 
             {/* Project 3 */}
-            <div className="bg-surface rounded-xl p-8 border border-slate-700 hover:border-primary/50 transition-colors group relative overflow-hidden">
+            <div className="bg-surface rounded-xl p-8 border border-border hover:border-primary/50 transition-colors group relative overflow-hidden">
               <div className="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
                 <Shield size={100} />
               </div>
@@ -182,7 +202,7 @@ function App() {
             </div>
 
             {/* Project 4 */}
-            <div className="bg-surface rounded-xl p-8 border border-slate-700 hover:border-primary/50 transition-colors group relative overflow-hidden">
+            <div className="bg-surface rounded-xl p-8 border border-border hover:border-primary/50 transition-colors group relative overflow-hidden">
               <div className="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
                 <Cloud size={100} />
               </div>
@@ -228,10 +248,10 @@ function App() {
                   <h4 className="font-bold text-lg">Osos Engineering</h4>
                   <p className="text-sm text-muted">Apr 2025 - Present</p>
                 </div>
-                <div className="md:col-span-3 bg-surface p-6 rounded-xl border border-slate-800">
+                <div className="md:col-span-3 bg-surface p-6 rounded-xl border border-border">
                   <h3 className="text-xl font-bold mb-1">IT Systems Administrator & Developer</h3>
                   <p className="text-muted text-sm mb-4">Remote - Makkah Saudi Arabia & Tanta Branch</p>
-                  <ul className="space-y-2 text-sm text-slate-300 list-disc list-inside">
+                  <ul className="space-y-2 text-sm text-muted list-disc list-inside">
                     <li>Designed and deployed a complete Active Directory-based infrastructure for 16 employees, including centralized authentication, secure file services, printer deployment, attendance management, backup, and disaster recovery solutions.</li>
                     <li>Deployed and administer Windows Server 2025 managing AD DS, DNS, centralized DHCP, and restricted file shares with strict NTFS security models.</li>
                     <li>Designed and implemented a resilient network topology via Omada SDN, configuring TP-Link ER605 routers, SG2218P managed switches, EAP620 HD access points, and VLAN segmentation.</li>
@@ -249,14 +269,14 @@ function App() {
               <div className="hidden md:block absolute left-1/4 top-0 bottom-0 w-px bg-surface -ml-px"></div>
               <div className="md:grid md:grid-cols-4 md:gap-8 items-start">
                 <div className="mb-4 md:mb-0 md:text-right md:pr-12 relative">
-                  <div className="hidden md:block absolute right-0 top-1.5 w-3 h-3 bg-slate-600 rounded-full translate-x-1.5 ring-4 ring-background"></div>
+                  <div className="hidden md:block absolute right-0 top-1.5 w-3 h-3 bg-muted rounded-full translate-x-1.5 ring-4 ring-background"></div>
                   <h4 className="font-bold text-lg">Concentrix</h4>
                   <p className="text-sm text-muted">Nov 2025 - Feb 2026</p>
                 </div>
-                <div className="md:col-span-3 bg-surface/50 p-6 rounded-xl border border-slate-800/50">
+                <div className="md:col-span-3 bg-surface/50 p-6 rounded-xl border border-border">
                   <h3 className="text-xl font-bold mb-1">Technical Support Advisor (Tier 1)</h3>
                   <p className="text-muted text-sm mb-4">Cairo, Egypt</p>
-                  <ul className="space-y-2 text-sm text-slate-400 list-disc list-inside">
+                  <ul className="space-y-2 text-sm text-muted list-disc list-inside">
                     <li>Provided real-time Tier 1 technical troubleshooting for international customers ensuring rapid First Call Resolution (FCR).</li>
                     <li>Diagnosed and resolved account access, connectivity, and software configuration issues while strictly adhering to SLAs.</li>
                     <li>Maintained detailed technical documentation and logged complex technical scenarios in the CRM system with high accuracy to support Tier 2 escalations.</li>
@@ -270,14 +290,14 @@ function App() {
               <div className="hidden md:block absolute left-1/4 top-0 bottom-0 w-px bg-surface -ml-px"></div>
               <div className="md:grid md:grid-cols-4 md:gap-8 items-start">
                 <div className="mb-4 md:mb-0 md:text-right md:pr-12 relative">
-                  <div className="hidden md:block absolute right-0 top-1.5 w-3 h-3 bg-slate-600 rounded-full translate-x-1.5 ring-4 ring-background"></div>
+                  <div className="hidden md:block absolute right-0 top-1.5 w-3 h-3 bg-muted rounded-full translate-x-1.5 ring-4 ring-background"></div>
                   <h4 className="font-bold text-lg">Green Buildings</h4>
                   <p className="text-sm text-muted">Aug 2024 - Dec 2024</p>
                 </div>
-                <div className="md:col-span-3 bg-surface/50 p-6 rounded-xl border border-slate-800/50">
+                <div className="md:col-span-3 bg-surface/50 p-6 rounded-xl border border-border">
                   <h3 className="text-xl font-bold mb-1">IT Systems Administrator</h3>
                   <p className="text-muted text-sm mb-4">Makkah, Saudi Arabia</p>
-                  <ul className="space-y-2 text-sm text-slate-400 list-disc list-inside">
+                  <ul className="space-y-2 text-sm text-muted list-disc list-inside">
                     <li>Managed daily IT operations and provided on-site technical support for staff covering hardware, network, and OS issues.</li>
                     <li>Maintained network infrastructure uptime by troubleshooting DNS, DHCP, and LAN/WAN connectivity issues effectively.</li>
                     <li>Administered Active Directory user accounts - managing permissions, password resets, and file-sharing access controls.</li>
@@ -291,14 +311,14 @@ function App() {
               <div className="hidden md:block absolute left-1/4 top-0 bottom-0 w-px bg-surface -ml-px"></div>
               <div className="md:grid md:grid-cols-4 md:gap-8 items-start">
                 <div className="mb-4 md:mb-0 md:text-right md:pr-12 relative">
-                  <div className="hidden md:block absolute right-0 top-1.5 w-3 h-3 bg-slate-600 rounded-full translate-x-1.5 ring-4 ring-background"></div>
+                  <div className="hidden md:block absolute right-0 top-1.5 w-3 h-3 bg-muted rounded-full translate-x-1.5 ring-4 ring-background"></div>
                   <h4 className="font-bold text-lg">Modern Designs</h4>
                   <p className="text-sm text-muted">Jun 2015 - Aug 2024</p>
                 </div>
-                <div className="md:col-span-3 bg-surface/50 p-6 rounded-xl border border-slate-800/50">
+                <div className="md:col-span-3 bg-surface/50 p-6 rounded-xl border border-border">
                   <h3 className="text-xl font-bold mb-1">IT Systems Administrator</h3>
                   <p className="text-muted text-sm mb-4">Makkah, Saudi Arabia</p>
-                  <ul className="space-y-2 text-sm text-slate-400 list-disc list-inside">
+                  <ul className="space-y-2 text-sm text-muted list-disc list-inside">
                     <li>Sole IT administrator managing the full IT infrastructure independently for 9 consecutive years.</li>
                     <li>Administered Windows Server environments and Active Directory Domain Services (AD DS).</li>
                     <li>Managed virtualization platforms including VMware and Hyper-V, ensuring high availability.</li>
@@ -314,14 +334,14 @@ function App() {
               <div className="hidden md:block absolute left-1/4 top-0 bottom-0 w-px bg-surface -ml-px"></div>
               <div className="md:grid md:grid-cols-4 md:gap-8 items-start">
                 <div className="mb-4 md:mb-0 md:text-right md:pr-12 relative">
-                  <div className="hidden md:block absolute right-0 top-1.5 w-3 h-3 bg-slate-600 rounded-full translate-x-1.5 ring-4 ring-background"></div>
+                  <div className="hidden md:block absolute right-0 top-1.5 w-3 h-3 bg-muted rounded-full translate-x-1.5 ring-4 ring-background"></div>
                   <h4 className="font-bold text-lg">Independent Consultant</h4>
                   <p className="text-sm text-muted">Jan 2017 - Jan 2024</p>
                 </div>
-                <div className="md:col-span-3 bg-surface/50 p-6 rounded-xl border border-slate-800/50">
+                <div className="md:col-span-3 bg-surface/50 p-6 rounded-xl border border-border">
                   <h3 className="text-xl font-bold mb-1">Freelance IT & Security Systems Engineer</h3>
                   <p className="text-muted text-sm mb-4">Makkah, Saudi Arabia</p>
-                  <ul className="space-y-2 text-sm text-slate-400 list-disc list-inside">
+                  <ul className="space-y-2 text-sm text-muted list-disc list-inside">
                     <li>Directed large-scale CCTV and integrated security system installations across 300+ hotels and commercial buildings.</li>
                     <li>Provided comprehensive IT support and network troubleshooting (LAN/WLAN) for over 100 enterprise facilities.</li>
                     <li>Maintained and repaired servers, laptops, and printers to diagnose hardware/software issues and minimize downtime.</li>
@@ -342,7 +362,7 @@ function App() {
           </div>
 
           {/* AMIT Full Stack Python */}
-          <div className="bg-surface rounded-xl p-8 border border-slate-700 relative overflow-hidden mb-12">
+          <div className="bg-surface rounded-xl p-8 border border-border relative overflow-hidden mb-12">
             <div className="absolute top-0 right-0 p-6 opacity-10">
               <Terminal size={100} />
             </div>
@@ -351,7 +371,7 @@ function App() {
                 <h3 className="text-2xl font-bold text-primary mb-1">Full Stack Python Development Diploma</h3>
                 <p className="text-lg text-muted">AMIT Learning • 180 Hours <span className="ml-2 text-xs font-bold px-2 py-1 bg-green-500/20 text-green-400 rounded align-middle">Completed</span></p>
               </div>
-              <a href="/Certificates/full stack  python .pdf" download className="hidden md:flex items-center gap-2 px-4 py-2 bg-slate-800 text-sm font-bold rounded hover:bg-slate-700 transition-all border border-slate-600">
+              <a href="/Certificates/full stack  python .pdf" download className="hidden md:flex items-center gap-2 px-4 py-2 bg-card text-sm font-bold rounded hover:bg-slate-700 transition-all border border-slate-600">
                 <Download size={16}/> Program Details
               </a>
             </div>
@@ -360,33 +380,33 @@ function App() {
             </p>
             
             <div className="grid md:grid-cols-3 gap-6 relative z-10">
-              <div className="bg-slate-900/50 p-5 rounded-lg border border-slate-800">
+              <div className="bg-card p-5 rounded-lg border border-border">
                 <div className="flex items-center justify-between mb-4">
                   <h4 className="font-bold text-sky-400">Front-End</h4>
                 </div>
-                <ul className="space-y-2 text-sm text-slate-300">
+                <ul className="space-y-2 text-sm text-muted">
                   <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-green-400"></div> HTML5 & CSS3</li>
                   <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-green-400"></div> JavaScript & DOM</li>
                   <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-green-400"></div> React.js & Next.js</li>
                 </ul>
               </div>
 
-              <div className="bg-slate-900/50 p-5 rounded-lg border border-slate-800">
+              <div className="bg-card p-5 rounded-lg border border-border">
                 <div className="flex items-center justify-between mb-4">
                   <h4 className="font-bold text-blue-400">Back-End (Python)</h4>
                 </div>
-                <ul className="space-y-2 text-sm text-slate-300">
+                <ul className="space-y-2 text-sm text-muted">
                   <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-green-400"></div> Python Native & OOP</li>
                   <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-green-400"></div> Django Framework</li>
                   <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-green-400"></div> APIs & Web Automation</li>
                 </ul>
               </div>
 
-              <div className="bg-slate-900/50 p-5 rounded-lg border border-slate-800">
+              <div className="bg-card p-5 rounded-lg border border-border">
                 <div className="flex items-center justify-between mb-4">
                   <h4 className="font-bold text-orange-400">Databases</h4>
                 </div>
-                <ul className="space-y-2 text-sm text-slate-300">
+                <ul className="space-y-2 text-sm text-muted">
                   <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-green-400"></div> PostgreSQL</li>
                   <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-green-400"></div> Advanced SQL</li>
                   <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-green-400"></div> NoSQL Foundations</li>
@@ -394,12 +414,12 @@ function App() {
               </div>
             </div>
             
-            <a href="/Certificates/full stack  python .pdf" download className="md:hidden mt-6 flex justify-center items-center gap-2 px-4 py-3 bg-slate-800 text-sm font-bold rounded hover:bg-slate-700 transition-all border border-slate-600 relative z-10">
+            <a href="/Certificates/full stack  python .pdf" download className="md:hidden mt-6 flex justify-center items-center gap-2 px-4 py-3 bg-card text-sm font-bold rounded hover:bg-slate-700 transition-all border border-slate-600 relative z-10">
               <Download size={16}/> Download Program Syllabus
             </a>
           </div>
 
-          <div className="bg-surface rounded-xl p-8 border border-slate-700 relative overflow-hidden">
+          <div className="bg-surface rounded-xl p-8 border border-border relative overflow-hidden">
             <div className="absolute top-0 right-0 p-6 opacity-10">
               <GraduationCap size={100} />
             </div>
@@ -408,7 +428,7 @@ function App() {
                 <h3 className="text-2xl font-bold text-primary mb-1">Cloud Engineering Program (Architect & Administration)</h3>
                 <p className="text-lg text-muted">IT Gate Academy • 6 Months (320 Hours)</p>
               </div>
-              <a href="/Certificates/Cloud.pdf" download className="hidden md:flex items-center gap-2 px-4 py-2 bg-slate-800 text-sm font-bold rounded hover:bg-slate-700 transition-all border border-slate-600">
+              <a href="/Certificates/Cloud.pdf" download className="hidden md:flex items-center gap-2 px-4 py-2 bg-card text-sm font-bold rounded hover:bg-slate-700 transition-all border border-slate-600">
                 <Download size={16}/> Program Details
               </a>
             </div>
@@ -417,12 +437,12 @@ function App() {
             </p>
             
             <div className="grid md:grid-cols-3 gap-6 relative z-10">
-              <div className="bg-slate-900/50 p-5 rounded-lg border border-slate-800">
+              <div className="bg-card p-5 rounded-lg border border-border">
                 <div className="flex items-center justify-between mb-4">
                   <h4 className="font-bold text-sky-400">Level 1: Infrastructure</h4>
                   <span className="text-xs font-bold px-2 py-1 bg-green-500/20 text-green-400 rounded">Completed</span>
                 </div>
-                <ul className="space-y-2 text-sm text-slate-300">
+                <ul className="space-y-2 text-sm text-muted">
                   <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-green-400"></div> CCNA (Fast Track)</li>
                   <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-green-400"></div> MCSA Windows Server</li>
                   <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-green-400"></div> Linux Admin I</li>
@@ -430,31 +450,31 @@ function App() {
                 </ul>
               </div>
 
-              <div className="bg-slate-900/50 p-5 rounded-lg border border-slate-800">
+              <div className="bg-card p-5 rounded-lg border border-border">
                 <div className="flex items-center justify-between mb-4">
                   <h4 className="font-bold text-blue-400">Level 2: Azure Cloud</h4>
                   <span className="text-xs font-bold px-2 py-1 bg-yellow-500/20 text-yellow-400 rounded">In Progress</span>
                 </div>
-                <ul className="space-y-2 text-sm text-slate-400">
+                <ul className="space-y-2 text-sm text-muted">
                   <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-yellow-400"></div> AZ-900: Fundamentals</li>
-                  <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-slate-600"></div> AZ-104: Administration</li>
-                  <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-slate-600"></div> AZ-305: Solutions Architect</li>
+                  <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-muted"></div> AZ-104: Administration</li>
+                  <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-muted"></div> AZ-305: Solutions Architect</li>
                 </ul>
               </div>
 
-              <div className="bg-slate-900/50 p-5 rounded-lg border border-slate-800">
+              <div className="bg-card p-5 rounded-lg border border-border">
                 <div className="flex items-center justify-between mb-4">
                   <h4 className="font-bold text-orange-400">Level 3: AWS Cloud</h4>
-                  <span className="text-xs font-bold px-2 py-1 bg-slate-500/20 text-slate-400 rounded">Upcoming</span>
+                  <span className="text-xs font-bold px-2 py-1 bg-card text-muted rounded">Upcoming</span>
                 </div>
-                <ul className="space-y-2 text-sm text-slate-400">
-                  <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-slate-600"></div> AWS Solutions Architect</li>
-                  <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-slate-600"></div> AWS SysOps Administration</li>
+                <ul className="space-y-2 text-sm text-muted">
+                  <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-muted"></div> AWS Solutions Architect</li>
+                  <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-muted"></div> AWS SysOps Administration</li>
                 </ul>
               </div>
             </div>
             
-            <a href="/Certificates/Cloud.pdf" download className="md:hidden mt-6 flex justify-center items-center gap-2 px-4 py-3 bg-slate-800 text-sm font-bold rounded hover:bg-slate-700 transition-all border border-slate-600 relative z-10">
+            <a href="/Certificates/Cloud.pdf" download className="md:hidden mt-6 flex justify-center items-center gap-2 px-4 py-3 bg-card text-sm font-bold rounded hover:bg-slate-700 transition-all border border-slate-600 relative z-10">
               <Download size={16}/> Download Program Syllabus
             </a>
           </div>
@@ -473,7 +493,7 @@ function App() {
                   <h4 className="text-sm font-bold uppercase text-muted tracking-wider mb-3">Cloud & DevOps</h4>
                   <div className="flex flex-wrap gap-2">
                     {['Microsoft Azure', 'AWS', 'Linux', 'Docker', 'DigitalOcean', 'Git', 'Vercel'].map(s => (
-                      <span key={s} className="px-3 py-1 bg-surface border border-slate-700 rounded-full text-sm">{s}</span>
+                      <span key={s} className="px-3 py-1 bg-surface border border-border rounded-full text-sm">{s}</span>
                     ))}
                   </div>
                 </div>
@@ -481,7 +501,7 @@ function App() {
                   <h4 className="text-sm font-bold uppercase text-muted tracking-wider mb-3">Software Development</h4>
                   <div className="flex flex-wrap gap-2">
                     {['Python', 'Django', 'FastAPI', 'React.js', 'JavaScript', 'HTML/CSS', 'PostgreSQL', 'SQL'].map(s => (
-                      <span key={s} className="px-3 py-1 bg-surface border border-slate-700 rounded-full text-sm">{s}</span>
+                      <span key={s} className="px-3 py-1 bg-surface border border-border rounded-full text-sm">{s}</span>
                     ))}
                   </div>
                 </div>
@@ -489,7 +509,7 @@ function App() {
                   <h4 className="text-sm font-bold uppercase text-muted tracking-wider mb-3">Systems & Infrastructure</h4>
                   <div className="flex flex-wrap gap-2">
                     {['Windows Server', 'Active Directory', 'Hyper-V', 'VMware', 'Networking', 'Disaster Recovery', 'PowerShell'].map(s => (
-                      <span key={s} className="px-3 py-1 bg-surface border border-slate-700 rounded-full text-sm">{s}</span>
+                      <span key={s} className="px-3 py-1 bg-surface border border-border rounded-full text-sm">{s}</span>
                     ))}
                   </div>
                 </div>
@@ -503,12 +523,12 @@ function App() {
               </div>
               <div className="space-y-4">
                 {/* Kanz AI */}
-                <div className="flex items-start gap-4 p-4 bg-surface/50 rounded-lg border border-slate-800/50">
+                <div className="flex items-start gap-4 p-4 bg-surface/50 rounded-lg border border-border">
                   <Shield className="text-primary shrink-0 mt-1" size={20}/>
                   <div className="flex-1">
                     <div className="flex justify-between items-start gap-2">
                       <h4 className="font-bold">AI Training Hackathon</h4>
-                      <a href="/Certificates/Kanz AI.pdf" download className="text-primary hover:text-sky-300 transition-colors flex items-center gap-1 text-sm bg-slate-800/50 px-2 py-1 rounded border border-slate-700">
+                      <a href="/Certificates/Kanz AI.pdf" download className="text-primary hover:text-sky-300 transition-colors flex items-center gap-1 text-sm bg-card px-2 py-1 rounded border border-border">
                         <Download size={14}/> PDF
                       </a>
                     </div>
@@ -517,12 +537,12 @@ function App() {
                 </div>
 
                 {/* MCSE Cloud */}
-                <div className="flex items-start gap-4 p-4 bg-surface/50 rounded-lg border border-slate-800/50">
+                <div className="flex items-start gap-4 p-4 bg-surface/50 rounded-lg border border-border">
                   <Shield className="text-primary shrink-0 mt-1" size={20}/>
                   <div className="flex-1">
                     <div className="flex justify-between items-start gap-2">
                       <h4 className="font-bold">MCSE: Cloud Platform & Infrastructure</h4>
-                      <a href="/Certificates/Microsoft Certified Solutions Expert Cloud Platform and Infrastructure Charter Member.pdf" download className="text-primary hover:text-sky-300 transition-colors flex items-center gap-1 text-sm bg-slate-800/50 px-2 py-1 rounded border border-slate-700">
+                      <a href="/Certificates/Microsoft Certified Solutions Expert Cloud Platform and Infrastructure Charter Member.pdf" download className="text-primary hover:text-sky-300 transition-colors flex items-center gap-1 text-sm bg-card px-2 py-1 rounded border border-border">
                         <Download size={14}/> PDF
                       </a>
                     </div>
@@ -531,12 +551,12 @@ function App() {
                 </div>
 
                 {/* MCSE Server */}
-                <div className="flex items-start gap-4 p-4 bg-surface/50 rounded-lg border border-slate-800/50">
+                <div className="flex items-start gap-4 p-4 bg-surface/50 rounded-lg border border-border">
                   <Shield className="text-primary shrink-0 mt-1" size={20}/>
                   <div className="flex-1">
                     <div className="flex justify-between items-start gap-2">
                       <h4 className="font-bold">MCSE: Server Infrastructure</h4>
-                      <a href="/Certificates/Microsoft Certified Solutions Expert Server Infrastructure.pdf" download className="text-primary hover:text-sky-300 transition-colors flex items-center gap-1 text-sm bg-slate-800/50 px-2 py-1 rounded border border-slate-700">
+                      <a href="/Certificates/Microsoft Certified Solutions Expert Server Infrastructure.pdf" download className="text-primary hover:text-sky-300 transition-colors flex items-center gap-1 text-sm bg-card px-2 py-1 rounded border border-border">
                         <Download size={14}/> PDF
                       </a>
                     </div>
@@ -545,12 +565,12 @@ function App() {
                 </div>
 
                 {/* MCSA Windows Server 2012 */}
-                <div className="flex items-start gap-4 p-4 bg-surface/50 rounded-lg border border-slate-800/50">
+                <div className="flex items-start gap-4 p-4 bg-surface/50 rounded-lg border border-border">
                   <Shield className="text-primary shrink-0 mt-1" size={20}/>
                   <div className="flex-1">
                     <div className="flex justify-between items-start gap-2">
                       <h4 className="font-bold">MCSA: Windows Server 2012</h4>
-                      <a href="/Certificates/MCSA Windows Server 2012.pdf" download className="text-primary hover:text-sky-300 transition-colors flex items-center gap-1 text-sm bg-slate-800/50 px-2 py-1 rounded border border-slate-700">
+                      <a href="/Certificates/MCSA Windows Server 2012.pdf" download className="text-primary hover:text-sky-300 transition-colors flex items-center gap-1 text-sm bg-card px-2 py-1 rounded border border-border">
                         <Download size={14}/> PDF
                       </a>
                     </div>
@@ -559,12 +579,12 @@ function App() {
                 </div>
 
                 {/* CEH */}
-                <div className="flex items-start gap-4 p-4 bg-surface/50 rounded-lg border border-slate-800/50">
-                  <Shield className="text-slate-400 shrink-0 mt-1" size={20}/>
+                <div className="flex items-start gap-4 p-4 bg-surface/50 rounded-lg border border-border">
+                  <Shield className="text-muted shrink-0 mt-1" size={20}/>
                   <div className="flex-1">
                     <div className="flex justify-between items-start gap-2">
                       <h4 className="font-bold">Certified Ethical Hacker (CEH v8)</h4>
-                      <a href="/Certificates/Certified Ethical Hacker V8.pdf" download className="text-primary hover:text-sky-300 transition-colors flex items-center gap-1 text-sm bg-slate-800/50 px-2 py-1 rounded border border-slate-700">
+                      <a href="/Certificates/Certified Ethical Hacker V8.pdf" download className="text-primary hover:text-sky-300 transition-colors flex items-center gap-1 text-sm bg-card px-2 py-1 rounded border border-border">
                         <Download size={14}/> PDF
                       </a>
                     </div>
@@ -573,12 +593,12 @@ function App() {
                 </div>
 
                 {/* MCP */}
-                <div className="flex items-start gap-4 p-4 bg-surface/50 rounded-lg border border-slate-800/50">
-                  <Shield className="text-slate-400 shrink-0 mt-1" size={20}/>
+                <div className="flex items-start gap-4 p-4 bg-surface/50 rounded-lg border border-border">
+                  <Shield className="text-muted shrink-0 mt-1" size={20}/>
                   <div className="flex-1">
                     <div className="flex justify-between items-start gap-2">
                       <h4 className="font-bold">Microsoft Certified Professional</h4>
-                      <a href="/Certificates/Microsoft Certified Professional.pdf" download className="text-primary hover:text-sky-300 transition-colors flex items-center gap-1 text-sm bg-slate-800/50 px-2 py-1 rounded border border-slate-700">
+                      <a href="/Certificates/Microsoft Certified Professional.pdf" download className="text-primary hover:text-sky-300 transition-colors flex items-center gap-1 text-sm bg-card px-2 py-1 rounded border border-border">
                         <Download size={14}/> PDF
                       </a>
                     </div>
@@ -587,12 +607,12 @@ function App() {
                 </div>
 
                 {/* MTA Networking */}
-                <div className="flex items-start gap-4 p-4 bg-surface/50 rounded-lg border border-slate-800/50">
-                  <Shield className="text-slate-400 shrink-0 mt-1" size={20}/>
+                <div className="flex items-start gap-4 p-4 bg-surface/50 rounded-lg border border-border">
+                  <Shield className="text-muted shrink-0 mt-1" size={20}/>
                   <div className="flex-1">
                     <div className="flex justify-between items-start gap-2">
                       <h4 className="font-bold">MTA: Networking Fundamentals</h4>
-                      <a href="/Certificates/MTA Networking Fundamentals.pdf" download className="text-primary hover:text-sky-300 transition-colors flex items-center gap-1 text-sm bg-slate-800/50 px-2 py-1 rounded border border-slate-700">
+                      <a href="/Certificates/MTA Networking Fundamentals.pdf" download className="text-primary hover:text-sky-300 transition-colors flex items-center gap-1 text-sm bg-card px-2 py-1 rounded border border-border">
                         <Download size={14}/> PDF
                       </a>
                     </div>
@@ -601,12 +621,12 @@ function App() {
                 </div>
 
                 {/* MTA Security */}
-                <div className="flex items-start gap-4 p-4 bg-surface/50 rounded-lg border border-slate-800/50">
-                  <Shield className="text-slate-400 shrink-0 mt-1" size={20}/>
+                <div className="flex items-start gap-4 p-4 bg-surface/50 rounded-lg border border-border">
+                  <Shield className="text-muted shrink-0 mt-1" size={20}/>
                   <div className="flex-1">
                     <div className="flex justify-between items-start gap-2">
                       <h4 className="font-bold">MTA: Security Fundamentals</h4>
-                      <a href="/Certificates/MTA Security Fundamentals.pdf" download className="text-primary hover:text-sky-300 transition-colors flex items-center gap-1 text-sm bg-slate-800/50 px-2 py-1 rounded border border-slate-700">
+                      <a href="/Certificates/MTA Security Fundamentals.pdf" download className="text-primary hover:text-sky-300 transition-colors flex items-center gap-1 text-sm bg-card px-2 py-1 rounded border border-border">
                         <Download size={14}/> PDF
                       </a>
                     </div>
