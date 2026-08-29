@@ -199,10 +199,13 @@ function App() {
                   <h3 className="text-xl font-bold mb-1">IT Systems Administrator & Developer</h3>
                   <p className="text-muted text-sm mb-4">Remote & Tanta Branch, Egypt</p>
                   <ul className="space-y-2 text-sm text-slate-300 list-disc list-inside">
-                    <li>Provisioned and managed Linux-based cloud infrastructure (DigitalOcean droplets) to host custom enterprise PMS.</li>
+                    <li>Designed and deployed a complete Active Directory-based infrastructure for 16 employees, including centralized authentication, secure file services, printer deployment, attendance management, backup, and disaster recovery solutions.</li>
+                    <li>Deployed and administer Windows Server 2025 managing AD DS, DNS, centralized DHCP, and restricted file shares with strict NTFS security models.</li>
+                    <li>Designed and implemented a resilient network topology via Omada SDN, configuring TP-Link ER605 routers, SG2218P managed switches, EAP620 HD access points, and VLAN segmentation.</li>
+                    <li>Engineered a comprehensive 4-layer Disaster Recovery strategy: RAID1 software mirroring, Volume Shadow Copies, daily Bare Metal Windows Server Backups, and external backup repositories.</li>
+                    <li>Configured ZKTeco BioTime 9.0.6 attendance system, syncing MB5000 biometric terminals in real-time.</li>
                     <li>Developed full-stack web application using Python (FastAPI), PostgreSQL, and React with Git version control.</li>
-                    <li>Deployed complete Active Directory-based infrastructure for 16 employees including centralized authentication.</li>
-                    <li>Engineered a comprehensive 4-layer DR strategy (RAID1, VSS, Bare Metal, external repositories).</li>
+                    <li>Provisioned and managed Linux-based cloud infrastructure (DigitalOcean droplets) to host custom enterprise PMS.</li>
                   </ul>
                 </div>
               </div>
@@ -221,8 +224,9 @@ function App() {
                   <h3 className="text-xl font-bold mb-1">Technical Support Advisor (Tier 1)</h3>
                   <p className="text-muted text-sm mb-4">Cairo, Egypt</p>
                   <ul className="space-y-2 text-sm text-slate-400 list-disc list-inside">
-                    <li>Provided real-time technical troubleshooting for international enterprise customers.</li>
-                    <li>Maintained strict adherence to SLAs, ensuring rapid First Call Resolution (FCR).</li>
+                    <li>Provided real-time Tier 1 technical troubleshooting for international customers ensuring rapid First Call Resolution (FCR).</li>
+                    <li>Diagnosed and resolved account access, connectivity, and software configuration issues while strictly adhering to SLAs.</li>
+                    <li>Maintained detailed technical documentation and logged complex technical scenarios in the CRM system with high accuracy to support Tier 2 escalations.</li>
                   </ul>
                 </div>
               </div>
@@ -241,8 +245,9 @@ function App() {
                   <h3 className="text-xl font-bold mb-1">IT Systems Administrator</h3>
                   <p className="text-muted text-sm mb-4">Makkah, Saudi Arabia</p>
                   <ul className="space-y-2 text-sm text-slate-400 list-disc list-inside">
-                    <li>Managed daily IT operations and provided on-site technical support for staff.</li>
-                    <li>Maintained high network availability by troubleshooting DNS, DHCP, and LAN/WAN.</li>
+                    <li>Managed daily IT operations and provided on-site technical support for staff covering hardware, network, and OS issues.</li>
+                    <li>Maintained network infrastructure uptime by troubleshooting DNS, DHCP, and LAN/WAN connectivity issues effectively.</li>
+                    <li>Administered Active Directory user accounts - managing permissions, password resets, and file-sharing access controls.</li>
                   </ul>
                 </div>
               </div>
@@ -261,9 +266,12 @@ function App() {
                   <h3 className="text-xl font-bold mb-1">IT Systems Administrator</h3>
                   <p className="text-muted text-sm mb-4">Makkah, Saudi Arabia</p>
                   <ul className="space-y-2 text-sm text-slate-400 list-disc list-inside">
-                    <li>Acted as the sole IT administrator managing infrastructure for 9 consecutive years.</li>
-                    <li>Managed VMware and Hyper-V virtualization platforms ensuring high availability.</li>
-                    <li>Administered comprehensive Windows Server environments and AD DS.</li>
+                    <li>Sole IT administrator managing the full IT infrastructure independently for 9 consecutive years.</li>
+                    <li>Administered Windows Server environments and Active Directory Domain Services (AD DS).</li>
+                    <li>Managed virtualization platforms including VMware and Hyper-V, ensuring high availability.</li>
+                    <li>Implemented and maintained comprehensive backup and disaster recovery solutions.</li>
+                    <li>Troubleshot network and system issues ensuring maximum uptime and business continuity.</li>
+                    <li>Served as primary technical contact for all IT-related operations and vendor communications.</li>
                   </ul>
                 </div>
               </div>
