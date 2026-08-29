@@ -322,7 +322,7 @@ function App() {
                     <p className="text-sm text-muted">In Progress / Exam Scheduled</p>
                   </div>
                 </div>
-                
+
                 {/* Docker */}
                 <div className="flex items-start gap-4 p-4 bg-surface/50 rounded-lg border border-slate-800/50">
                   <Shield className="text-slate-400 shrink-0 mt-1" size={20}/>
@@ -331,8 +331,22 @@ function App() {
                     <p className="text-sm text-muted">Completed via SCAL Academy</p>
                   </div>
                 </div>
-                
-                {/* Microsoft Certs */}
+
+                {/* Kanz AI */}
+                <div className="flex items-start gap-4 p-4 bg-surface/50 rounded-lg border border-slate-800/50">
+                  <Shield className="text-primary shrink-0 mt-1" size={20}/>
+                  <div className="flex-1">
+                    <div className="flex justify-between items-start gap-2">
+                      <h4 className="font-bold">AI Training Hackathon</h4>
+                      <a href="/Certificates/Kanz AI.pdf" download className="text-primary hover:text-sky-300 transition-colors flex items-center gap-1 text-sm bg-slate-800/50 px-2 py-1 rounded border border-slate-700">
+                        <Download size={14}/> PDF
+                      </a>
+                    </div>
+                    <p className="text-sm text-muted">Kanz AI - July 2026</p>
+                  </div>
+                </div>
+
+                {/* MCSE Cloud */}
                 <div className="flex items-start gap-4 p-4 bg-surface/50 rounded-lg border border-slate-800/50">
                   <Shield className="text-primary shrink-0 mt-1" size={20}/>
                   <div className="flex-1">
@@ -342,10 +356,11 @@ function App() {
                         <Download size={14}/> PDF
                       </a>
                     </div>
-                    <p className="text-sm text-muted">Microsoft Certified Solutions Expert</p>
+                    <p className="text-sm text-muted">Microsoft Certified Solutions Expert - Sep 2016</p>
                   </div>
                 </div>
 
+                {/* MCSE Server */}
                 <div className="flex items-start gap-4 p-4 bg-surface/50 rounded-lg border border-slate-800/50">
                   <Shield className="text-primary shrink-0 mt-1" size={20}/>
                   <div className="flex-1">
@@ -355,10 +370,11 @@ function App() {
                         <Download size={14}/> PDF
                       </a>
                     </div>
-                    <p className="text-sm text-muted">Microsoft Certified Solutions Expert</p>
+                    <p className="text-sm text-muted">Microsoft Certified Solutions Expert - Mar 2015</p>
                   </div>
                 </div>
 
+                {/* MCSA Windows Server 2012 */}
                 <div className="flex items-start gap-4 p-4 bg-surface/50 rounded-lg border border-slate-800/50">
                   <Shield className="text-primary shrink-0 mt-1" size={20}/>
                   <div className="flex-1">
@@ -368,49 +384,10 @@ function App() {
                         <Download size={14}/> PDF
                       </a>
                     </div>
-                    <p className="text-sm text-muted">Microsoft Certified Solutions Associate</p>
+                    <p className="text-sm text-muted">Microsoft Certified Solutions Associate - Mar 2015</p>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 p-4 bg-surface/50 rounded-lg border border-slate-800/50">
-                  <Shield className="text-slate-400 shrink-0 mt-1" size={20}/>
-                  <div className="flex-1">
-                    <div className="flex justify-between items-start gap-2">
-                      <h4 className="font-bold">MTA: Networking Fundamentals</h4>
-                      <a href="/Certificates/MTA Networking Fundamentals.pdf" download className="text-primary hover:text-sky-300 transition-colors flex items-center gap-1 text-sm bg-slate-800/50 px-2 py-1 rounded border border-slate-700">
-                        <Download size={14}/> PDF
-                      </a>
-                    </div>
-                    <p className="text-sm text-muted">Microsoft Technology Associate</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4 p-4 bg-surface/50 rounded-lg border border-slate-800/50">
-                  <Shield className="text-slate-400 shrink-0 mt-1" size={20}/>
-                  <div className="flex-1">
-                    <div className="flex justify-between items-start gap-2">
-                      <h4 className="font-bold">MTA: Security Fundamentals</h4>
-                      <a href="/Certificates/MTA Security Fundamentals.pdf" download className="text-primary hover:text-sky-300 transition-colors flex items-center gap-1 text-sm bg-slate-800/50 px-2 py-1 rounded border border-slate-700">
-                        <Download size={14}/> PDF
-                      </a>
-                    </div>
-                    <p className="text-sm text-muted">Microsoft Technology Associate</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4 p-4 bg-surface/50 rounded-lg border border-slate-800/50">
-                  <Shield className="text-slate-400 shrink-0 mt-1" size={20}/>
-                  <div className="flex-1">
-                    <div className="flex justify-between items-start gap-2">
-                      <h4 className="font-bold">Microsoft Certified Professional</h4>
-                      <a href="/Certificates/Microsoft Certified Professional.pdf" download className="text-primary hover:text-sky-300 transition-colors flex items-center gap-1 text-sm bg-slate-800/50 px-2 py-1 rounded border border-slate-700">
-                        <Download size={14}/> PDF
-                      </a>
-                    </div>
-                    <p className="text-sm text-muted">MCP Certification</p>
-                  </div>
-                </div>
-                
                 {/* CEH */}
                 <div className="flex items-start gap-4 p-4 bg-surface/50 rounded-lg border border-slate-800/50">
                   <Shield className="text-slate-400 shrink-0 mt-1" size={20}/>
@@ -421,7 +398,49 @@ function App() {
                         <Download size={14}/> PDF
                       </a>
                     </div>
-                    <p className="text-sm text-muted">EC-Council</p>
+                    <p className="text-sm text-muted">EC-Council - Feb 2015</p>
+                  </div>
+                </div>
+
+                {/* MCP */}
+                <div className="flex items-start gap-4 p-4 bg-surface/50 rounded-lg border border-slate-800/50">
+                  <Shield className="text-slate-400 shrink-0 mt-1" size={20}/>
+                  <div className="flex-1">
+                    <div className="flex justify-between items-start gap-2">
+                      <h4 className="font-bold">Microsoft Certified Professional</h4>
+                      <a href="/Certificates/Microsoft Certified Professional.pdf" download className="text-primary hover:text-sky-300 transition-colors flex items-center gap-1 text-sm bg-slate-800/50 px-2 py-1 rounded border border-slate-700">
+                        <Download size={14}/> PDF
+                      </a>
+                    </div>
+                    <p className="text-sm text-muted">MCP Certification - Dec 2014</p>
+                  </div>
+                </div>
+
+                {/* MTA Networking */}
+                <div className="flex items-start gap-4 p-4 bg-surface/50 rounded-lg border border-slate-800/50">
+                  <Shield className="text-slate-400 shrink-0 mt-1" size={20}/>
+                  <div className="flex-1">
+                    <div className="flex justify-between items-start gap-2">
+                      <h4 className="font-bold">MTA: Networking Fundamentals</h4>
+                      <a href="/Certificates/MTA Networking Fundamentals.pdf" download className="text-primary hover:text-sky-300 transition-colors flex items-center gap-1 text-sm bg-slate-800/50 px-2 py-1 rounded border border-slate-700">
+                        <Download size={14}/> PDF
+                      </a>
+                    </div>
+                    <p className="text-sm text-muted">Microsoft Technology Associate - Dec 2014</p>
+                  </div>
+                </div>
+
+                {/* MTA Security */}
+                <div className="flex items-start gap-4 p-4 bg-surface/50 rounded-lg border border-slate-800/50">
+                  <Shield className="text-slate-400 shrink-0 mt-1" size={20}/>
+                  <div className="flex-1">
+                    <div className="flex justify-between items-start gap-2">
+                      <h4 className="font-bold">MTA: Security Fundamentals</h4>
+                      <a href="/Certificates/MTA Security Fundamentals.pdf" download className="text-primary hover:text-sky-300 transition-colors flex items-center gap-1 text-sm bg-slate-800/50 px-2 py-1 rounded border border-slate-700">
+                        <Download size={14}/> PDF
+                      </a>
+                    </div>
+                    <p className="text-sm text-muted">Microsoft Technology Associate - Dec 2014</p>
                   </div>
                 </div>
               </div>
