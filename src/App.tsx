@@ -197,7 +197,7 @@ function App() {
                 </div>
                 <div className="md:col-span-3 bg-surface p-6 rounded-xl border border-slate-800">
                   <h3 className="text-xl font-bold mb-1">IT Systems Administrator & Developer</h3>
-                  <p className="text-muted text-sm mb-4">Remote & Tanta Branch, Egypt</p>
+                  <p className="text-muted text-sm mb-4">Remote - Makkah Saudi Arabia & Tanta Branch</p>
                   <ul className="space-y-2 text-sm text-slate-300 list-disc list-inside">
                     <li>Designed and deployed a complete Active Directory-based infrastructure for 16 employees, including centralized authentication, secure file services, printer deployment, attendance management, backup, and disaster recovery solutions.</li>
                     <li>Deployed and administer Windows Server 2025 managing AD DS, DNS, centralized DHCP, and restricted file shares with strict NTFS security models.</li>
