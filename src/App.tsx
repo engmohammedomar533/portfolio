@@ -272,12 +272,71 @@ function App() {
           </div>
         </section>
 
-        {/* Current Training */}
+        {/* Training & Diplomas */}
         <section id="training" className="max-w-6xl mx-auto px-6 py-24 border-t border-surface">
           <div className="flex items-center gap-4 mb-12">
             <Cloud className="text-primary" size={32}/>
-            <h2 className="text-3xl font-bold">Current Training</h2>
+            <h2 className="text-3xl font-bold">Training & Diplomas</h2>
           </div>
+
+          {/* AMIT Full Stack Python */}
+          <div className="bg-surface rounded-xl p-8 border border-slate-700 relative overflow-hidden mb-12">
+            <div className="absolute top-0 right-0 p-6 opacity-10">
+              <Terminal size={100} />
+            </div>
+            <div className="flex justify-between items-start mb-4 relative z-10">
+              <div>
+                <h3 className="text-2xl font-bold text-primary mb-1">Full Stack Python Development Diploma</h3>
+                <p className="text-lg text-muted">AMIT Learning • 180 Hours <span className="ml-2 text-xs font-bold px-2 py-1 bg-green-500/20 text-green-400 rounded align-middle">Completed</span></p>
+              </div>
+              <a href="/Certificates/full stack  python .pdf" download className="hidden md:flex items-center gap-2 px-4 py-2 bg-slate-800 text-sm font-bold rounded hover:bg-slate-700 transition-all border border-slate-600">
+                <Download size={16}/> Program Details
+              </a>
+            </div>
+            <p className="text-muted mb-8 max-w-3xl relative z-10">
+              Comprehensive full-stack software development program covering both front-end engineering and back-end architecture with Python, Django, and PostgreSQL.
+            </p>
+            
+            <div className="grid md:grid-cols-3 gap-6 relative z-10">
+              <div className="bg-slate-900/50 p-5 rounded-lg border border-slate-800">
+                <div className="flex items-center justify-between mb-4">
+                  <h4 className="font-bold text-sky-400">Front-End</h4>
+                </div>
+                <ul className="space-y-2 text-sm text-slate-300">
+                  <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-green-400"></div> HTML5 & CSS3</li>
+                  <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-green-400"></div> JavaScript & DOM</li>
+                  <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-green-400"></div> React.js & Next.js</li>
+                </ul>
+              </div>
+
+              <div className="bg-slate-900/50 p-5 rounded-lg border border-slate-800">
+                <div className="flex items-center justify-between mb-4">
+                  <h4 className="font-bold text-blue-400">Back-End (Python)</h4>
+                </div>
+                <ul className="space-y-2 text-sm text-slate-300">
+                  <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-green-400"></div> Python Native & OOP</li>
+                  <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-green-400"></div> Django Framework</li>
+                  <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-green-400"></div> APIs & Web Automation</li>
+                </ul>
+              </div>
+
+              <div className="bg-slate-900/50 p-5 rounded-lg border border-slate-800">
+                <div className="flex items-center justify-between mb-4">
+                  <h4 className="font-bold text-orange-400">Databases</h4>
+                </div>
+                <ul className="space-y-2 text-sm text-slate-300">
+                  <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-green-400"></div> PostgreSQL</li>
+                  <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-green-400"></div> Advanced SQL</li>
+                  <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-green-400"></div> NoSQL Foundations</li>
+                </ul>
+              </div>
+            </div>
+            
+            <a href="/Certificates/full stack  python .pdf" download className="md:hidden mt-6 flex justify-center items-center gap-2 px-4 py-3 bg-slate-800 text-sm font-bold rounded hover:bg-slate-700 transition-all border border-slate-600 relative z-10">
+              <Download size={16}/> Download Program Syllabus
+            </a>
+          </div>
+
           <div className="bg-surface rounded-xl p-8 border border-slate-700 relative overflow-hidden">
             <div className="absolute top-0 right-0 p-6 opacity-10">
               <GraduationCap size={100} />
