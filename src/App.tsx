@@ -1,4 +1,4 @@
-﻿import { Server, Shield, Cloud, Terminal, ExternalLink, Mail, Download, Briefcase, GraduationCap } from 'lucide-react';
+import { Server, Shield, Cloud, Terminal, ExternalLink, Mail, Download, Briefcase, GraduationCap } from 'lucide-react';
 
 function App() {
   return (
@@ -40,12 +40,15 @@ function App() {
               Specializing in Linux, Windows Server, Networking, and deploying full-stack 
               SaaS architectures on robust cloud environments (DigitalOcean, Azure).
             </p>
-            <div className="flex gap-4 pt-4">
+            <div className="flex flex-wrap gap-4 pt-4">
               <a href="#contact" className="flex items-center gap-2 px-6 py-3 bg-primary text-background font-bold rounded hover:bg-sky-300 transition-all">
                 <Mail size={20}/> Hire Me
               </a>
               <a href="/Resume.pdf" className="flex items-center gap-2 px-6 py-3 bg-surface text-text font-bold rounded hover:bg-slate-700 transition-all border border-slate-700">
                 <Download size={20}/> Download CV
+              </a>
+              <a href="/Certificates.zip" download className="flex items-center gap-2 px-6 py-3 bg-surface text-text font-bold rounded hover:bg-slate-700 transition-all border border-slate-700">
+                <GraduationCap size={20}/> Certificates
               </a>
             </div>
             <div className="flex gap-6 pt-6 text-muted">
