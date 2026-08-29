@@ -171,9 +171,14 @@ function App() {
                   <span>Disaster Recovery (RAID/VSS)</span>
                 </div>
               </div>
-              <a href="https://github.com/engmohammedomar533/Enterprise-IT-Infrastructure-Deployment" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-primary font-medium hover:underline">
-                View Source on GitHub <ExternalLink size={16}/>
-              </a>
+              <div className="flex flex-wrap items-center gap-4 mt-2">
+                <div className="inline-flex items-center gap-2 text-green-400/80 font-medium px-3 py-1.5 bg-green-400/10 rounded-full text-sm">
+                  <Cloud size={14}/> 100% Cloud Managed
+                </div>
+                <a href="https://github.com/engmohammedomar533/Enterprise-IT-Infrastructure-Deployment" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-primary font-medium hover:underline">
+                  View Source on GitHub <ExternalLink size={16}/>
+                </a>
+              </div>
             </div>
 
             {/* Project 4 */}
