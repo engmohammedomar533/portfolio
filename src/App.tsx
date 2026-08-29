@@ -44,7 +44,7 @@ function App() {
               <a href="#contact" className="flex items-center gap-2 px-6 py-3 bg-primary text-background font-bold rounded hover:bg-sky-300 transition-all">
                 <Mail size={20}/> Hire Me
               </a>
-              <a href="/Resume.pdf" className="flex items-center gap-2 px-6 py-3 bg-surface text-text font-bold rounded hover:bg-slate-700 transition-all border border-slate-700">
+              <a href="/Certificates/Mohammed_Younis.pdf" className="flex items-center gap-2 px-6 py-3 bg-surface text-text font-bold rounded hover:bg-slate-700 transition-all border border-slate-700" target="_blank" rel="noreferrer">
                 <Download size={20}/> Download CV
               </a>
             </div>
@@ -272,6 +272,73 @@ function App() {
           </div>
         </section>
 
+        {/* Current Training */}
+        <section id="training" className="max-w-6xl mx-auto px-6 py-24 border-t border-surface">
+          <div className="flex items-center gap-4 mb-12">
+            <Cloud className="text-primary" size={32}/>
+            <h2 className="text-3xl font-bold">Current Training</h2>
+          </div>
+          <div className="bg-surface rounded-xl p-8 border border-slate-700 relative overflow-hidden">
+            <div className="absolute top-0 right-0 p-6 opacity-10">
+              <GraduationCap size={100} />
+            </div>
+            <div className="flex justify-between items-start mb-4 relative z-10">
+              <div>
+                <h3 className="text-2xl font-bold text-primary mb-1">Cloud Engineering Program (Architect & Administration)</h3>
+                <p className="text-lg text-muted">IT Gate Academy • 6 Months (320 Hours)</p>
+              </div>
+              <a href="/Certificates/Cloud.pdf" download className="hidden md:flex items-center gap-2 px-4 py-2 bg-slate-800 text-sm font-bold rounded hover:bg-slate-700 transition-all border border-slate-600">
+                <Download size={16}/> Program Details
+              </a>
+            </div>
+            <p className="text-muted mb-8 max-w-3xl relative z-10">
+              Currently enrolled in a comprehensive multi-cloud engineering diploma covering deep infrastructure, Microsoft Azure, and Amazon Web Services (AWS) architectures and administration.
+            </p>
+            
+            <div className="grid md:grid-cols-3 gap-6 relative z-10">
+              <div className="bg-slate-900/50 p-5 rounded-lg border border-slate-800">
+                <div className="flex items-center justify-between mb-4">
+                  <h4 className="font-bold text-sky-400">Level 1: Infrastructure</h4>
+                  <span className="text-xs font-bold px-2 py-1 bg-green-500/20 text-green-400 rounded">Completed</span>
+                </div>
+                <ul className="space-y-2 text-sm text-slate-300">
+                  <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-green-400"></div> CCNA (Fast Track)</li>
+                  <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-green-400"></div> MCSA Windows Server</li>
+                  <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-green-400"></div> Linux Admin I</li>
+                  <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-green-400"></div> Docker</li>
+                </ul>
+              </div>
+
+              <div className="bg-slate-900/50 p-5 rounded-lg border border-slate-800">
+                <div className="flex items-center justify-between mb-4">
+                  <h4 className="font-bold text-blue-400">Level 2: Azure Cloud</h4>
+                  <span className="text-xs font-bold px-2 py-1 bg-yellow-500/20 text-yellow-400 rounded">In Progress</span>
+                </div>
+                <ul className="space-y-2 text-sm text-slate-400">
+                  <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-yellow-400"></div> AZ-900: Fundamentals</li>
+                  <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-slate-600"></div> AZ-104: Administration</li>
+                  <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-slate-600"></div> AZ-305: Solutions Architect</li>
+                </ul>
+              </div>
+
+              <div className="bg-slate-900/50 p-5 rounded-lg border border-slate-800">
+                <div className="flex items-center justify-between mb-4">
+                  <h4 className="font-bold text-orange-400">Level 3: AWS Cloud</h4>
+                  <span className="text-xs font-bold px-2 py-1 bg-slate-500/20 text-slate-400 rounded">Upcoming</span>
+                </div>
+                <ul className="space-y-2 text-sm text-slate-400">
+                  <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-slate-600"></div> AWS Solutions Architect</li>
+                  <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-slate-600"></div> AWS SysOps Administration</li>
+                </ul>
+              </div>
+            </div>
+            
+            <a href="/Certificates/Cloud.pdf" download className="md:hidden mt-6 flex justify-center items-center gap-2 px-4 py-3 bg-slate-800 text-sm font-bold rounded hover:bg-slate-700 transition-all border border-slate-600 relative z-10">
+              <Download size={16}/> Download Program Syllabus
+            </a>
+          </div>
+        </section>
+
         {/* Skills & Certs */}
         <section id="skills" className="max-w-6xl mx-auto px-6 py-24 border-t border-surface">
           <div className="grid md:grid-cols-2 gap-16">
@@ -314,24 +381,6 @@ function App() {
                 <h2 className="text-2xl font-bold">Certifications & Training</h2>
               </div>
               <div className="space-y-4">
-                {/* Azure */}
-                <div className="flex items-start gap-4 p-4 bg-surface rounded-lg border border-slate-800">
-                  <Shield className="text-primary shrink-0 mt-1" size={20}/>
-                  <div className="flex-1">
-                    <h4 className="font-bold">Azure Fundamentals (AZ-900)</h4>
-                    <p className="text-sm text-muted">In Progress / Exam Scheduled</p>
-                  </div>
-                </div>
-
-                {/* Docker */}
-                <div className="flex items-start gap-4 p-4 bg-surface/50 rounded-lg border border-slate-800/50">
-                  <Shield className="text-slate-400 shrink-0 mt-1" size={20}/>
-                  <div className="flex-1">
-                    <h4 className="font-bold">Docker & Linux Admin I & II</h4>
-                    <p className="text-sm text-muted">Completed via SCAL Academy</p>
-                  </div>
-                </div>
-
                 {/* Kanz AI */}
                 <div className="flex items-start gap-4 p-4 bg-surface/50 rounded-lg border border-slate-800/50">
                   <Shield className="text-primary shrink-0 mt-1" size={20}/>
