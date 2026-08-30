@@ -117,7 +117,7 @@ function App() {
               <h3 className="text-2xl font-bold mb-3">Osos PMS (Enterprise SaaS)</h3>
               <p className="text-muted mb-6">
                 Architected, developed, and deployed a highly available custom Project Management System for an engineering consultancy. 
-                Replaces expensive tools like Procore with a bespoke Cloud infrastructure.
+                Delivers enterprise-grade project management capabilities through a bespoke, high-performance Cloud infrastructure.
               </p>
               <div className="space-y-3 mb-8">
                 <div className="flex items-center gap-3 text-sm">
