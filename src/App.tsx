@@ -65,7 +65,7 @@ function App() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
               </span>
-              Actively transitioning to Cloud & DevOps
+              Bridging Enterprise IT & Modern Software Engineering
             </div>
             <h1 className="text-5xl md:text-7xl font-bold leading-tight">
               Hi, I'm <span className="text-primary">Mohammed</span>. <br/>
