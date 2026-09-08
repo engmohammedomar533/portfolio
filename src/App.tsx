@@ -583,6 +583,7 @@ function App() {
                       </a>
                     </div>
                     <p className="text-sm text-muted">Kanz AI - July 2026</p>
+                      <p className="text-xs text-muted/70 font-mono mt-1">Credential ID: KANZ-ATT-2C0397537D</p>
                   </div>
                 </div>
 
@@ -597,6 +598,7 @@ function App() {
                       </a>
                     </div>
                     <p className="text-sm text-muted">Microsoft Certified Solutions Expert - Sep 2016</p>
+                      <p className="text-xs text-muted/70 font-mono mt-1">Credential ID: 50594E-9057FX</p>
                   </div>
                 </div>
 
@@ -611,6 +613,7 @@ function App() {
                       </a>
                     </div>
                     <p className="text-sm text-muted">Microsoft Certified Solutions Expert - Mar 2015</p>
+                      <p className="text-xs text-muted/70 font-mono mt-1">Credential ID: Y2EFF4-51125D</p>
                   </div>
                 </div>
 
@@ -625,6 +628,7 @@ function App() {
                       </a>
                     </div>
                     <p className="text-sm text-muted">Microsoft Certified Solutions Associate - Mar 2015</p>
+                      <p className="text-xs text-muted/70 font-mono mt-1">Credential ID: 4F8968-8417A3</p>
                   </div>
                 </div>
 
@@ -639,6 +643,7 @@ function App() {
                       </a>
                     </div>
                     <p className="text-sm text-muted">EC-Council - Feb 2015</p>
+                      <p className="text-xs text-muted/70 font-mono mt-1">Credential ID: ECC77846676460</p>
                   </div>
                 </div>
 
@@ -653,6 +658,7 @@ function App() {
                       </a>
                     </div>
                     <p className="text-sm text-muted">MCP Certification - Dec 2014</p>
+                      <p className="text-xs text-muted/70 font-mono mt-1">Credential ID: B88T2A-6DB4C9</p>
                   </div>
                 </div>
 
@@ -667,6 +673,7 @@ function App() {
                       </a>
                     </div>
                     <p className="text-sm text-muted">Microsoft Technology Associate - Dec 2014</p>
+                      <p className="text-xs text-muted/70 font-mono mt-1">Credential ID: D04864-B28EF4</p>
                   </div>
                 </div>
 
@@ -681,6 +688,7 @@ function App() {
                       </a>
                     </div>
                     <p className="text-sm text-muted">Microsoft Technology Associate - Dec 2014</p>
+                      <p className="text-xs text-muted/70 font-mono mt-1">Credential ID: 5F2EA9-797X01</p>
                   </div>
                 </div>
               </div>
