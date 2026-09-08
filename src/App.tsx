@@ -392,12 +392,12 @@ function App() {
                 <div className="md:col-span-3 bg-surface/50 p-6 rounded-xl border border-border">
                   <h3 className="text-xl font-bold mb-1">Freelance IT & Security Systems Engineer</h3>
                   <p className="text-muted text-sm mb-4">Makkah, Saudi Arabia</p>
-                  <ul className="space-y-2 text-sm text-muted list-disc list-inside">
-                    <li>Directed large-scale CCTV and integrated security system installations across 300+ hotels and commercial buildings.</li>
-                    <li>Provided comprehensive IT support and network troubleshooting (LAN/WLAN) for over 100 enterprise facilities.</li>
-                    <li>Maintained and repaired servers, laptops, and printers to diagnose hardware/software issues and minimize downtime.</li>
-                    <li>Managed hotel operations, staff coordination, and guest services during high-pressure peak Umrah seasons.</li>
-                  </ul>
+                  <ul className="space-y-3 text-sm text-muted list-outside ml-4 list-disc marker:text-primary">
+                      <li className="pl-1"><strong className="text-text font-semibold">Large-Scale Security Infrastructure:</strong> Directed the end-to-end architecture and deployment of enterprise-grade CCTV and integrated physical security systems across 300+ hotels and commercial buildings, ensuring strict compliance with regional safety regulations.</li>
+                      <li className="pl-1"><strong className="text-text font-semibold">Enterprise IT & Network Support:</strong> Delivered comprehensive IT consultancy and rapid-response network troubleshooting (LAN/WLAN) for over 100 enterprise facilities, significantly reducing network latency and resolving complex connectivity bottlenecks.</li>
+                      <li className="pl-1"><strong className="text-text font-semibold">Hardware Diagnostics & Maintenance:</strong> Executed advanced hardware diagnostics, proactive maintenance, and repairs across vast fleets of servers, workstations, and networking peripherals to guarantee minimal operational downtime.</li>
+                      <li className="pl-1"><strong className="text-text font-semibold">High-Pressure Operations Management:</strong> Acted as a strategic operational lead during peak Umrah seasons, orchestrating large-scale hotel operations, cross-functional staff coordination, and high-volume guest services under extreme logistical pressure.</li>
+                    </ul>
                 </div>
               </div>
             </div>
