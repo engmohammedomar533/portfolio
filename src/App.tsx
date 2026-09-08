@@ -266,9 +266,9 @@ function App() {
                   <a href="https://helpdesk.ososalbnaa.com" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-primary font-medium hover:underline">
                     Visit Live Portal <ExternalLink size={16}/>
                   </a>
-                  <a href="https://github.com/engmohammedomar533/IT-Ticketing" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-primary font-medium hover:underline">
-                    View Source <ExternalLink size={16}/>
-                  </a>
+                  <div className="inline-flex items-center gap-2 text-yellow-400/80 font-medium px-3 py-1.5 bg-yellow-400/10 rounded-full text-sm">
+                    <Lock size={14}/> Private Enterprise Repo
+                  </div>
                 </div>
               </div>
 
