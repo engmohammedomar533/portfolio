@@ -326,11 +326,11 @@ function App() {
                 <div className="md:col-span-3 bg-surface/50 p-6 rounded-xl border border-border">
                   <h3 className="text-xl font-bold mb-1">Technical Support Advisor (Tier 1)</h3>
                   <p className="text-muted text-sm mb-4">Cairo, Egypt</p>
-                  <ul className="space-y-2 text-sm text-muted list-disc list-inside">
-                    <li>Provided real-time Tier 1 technical troubleshooting for international customers ensuring rapid First Call Resolution (FCR).</li>
-                    <li>Diagnosed and resolved account access, connectivity, and software configuration issues while strictly adhering to SLAs.</li>
-                    <li>Maintained detailed technical documentation and logged complex technical scenarios in the CRM system with high accuracy to support Tier 2 escalations.</li>
-                  </ul>
+                  <ul className="space-y-3 text-sm text-muted list-outside ml-4 list-disc marker:text-primary">
+                      <li className="pl-1"><strong className="text-text font-semibold">Samsung Canada Tech Support (Tier 1):</strong> Delivered rapid, real-time technical troubleshooting and resolution via live chat for Samsung Canada customers, consistently achieving high First Contact Resolution (FCR) rates.</li>
+                      <li className="pl-1"><strong className="text-text font-semibold">Diagnostic & Connectivity Resolution:</strong> Diagnosed and successfully resolved complex consumer electronics issues, network connectivity dropouts, and software configurations while strictly adhering to corporate Service Level Agreements (SLAs).</li>
+                      <li className="pl-1"><strong className="text-text font-semibold">Incident Documentation & CRM Logging:</strong> Maintained comprehensive and precise technical documentation within the enterprise CRM system, accurately logging complex diagnostic scenarios to streamline Tier 2 escalation workflows.</li>
+                    </ul>
                 </div>
               </div>
             </div>
@@ -347,11 +347,12 @@ function App() {
                 <div className="md:col-span-3 bg-surface/50 p-6 rounded-xl border border-border">
                   <h3 className="text-xl font-bold mb-1">IT Systems Administrator</h3>
                   <p className="text-muted text-sm mb-4">Makkah, Saudi Arabia</p>
-                  <ul className="space-y-2 text-sm text-muted list-disc list-inside">
-                    <li>Managed daily IT operations and provided on-site technical support for staff covering hardware, network, and OS issues.</li>
-                    <li>Maintained network infrastructure uptime by troubleshooting DNS, DHCP, and LAN/WAN connectivity issues effectively.</li>
-                    <li>Administered Active Directory user accounts - managing permissions, password resets, and file-sharing access controls.</li>
-                  </ul>
+                  <ul className="space-y-3 text-sm text-muted list-outside ml-4 list-disc marker:text-primary">
+                      <li className="pl-1"><strong className="text-text font-semibold">IT Infrastructure Operations:</strong> Directed daily IT operations and provided comprehensive on-site technical support for corporate staff, diagnosing and rapidly resolving complex hardware, operating system, and endpoint anomalies.</li>
+                      <li className="pl-1"><strong className="text-text font-semibold">Network Administration & Connectivity:</strong> Maintained maximum network infrastructure uptime by actively monitoring and troubleshooting core domain services including DNS, DHCP, and complex LAN/WAN routing infrastructure.</li>
+                      <li className="pl-1"><strong className="text-text font-semibold">Active Directory & Access Management:</strong> Administered Active Directory Domain Services (AD DS) provisioning, meticulously managing user lifecycles, role-based access permissions, password security policies, and secure file-sharing controls.</li>
+                      <li className="pl-1"><strong className="text-text font-semibold">Endpoint Security & Asset Management:</strong> Deployed and maintained endpoint security protocols, ensuring all corporate hardware assets remained patched, secured, and strictly compliant with internal IT governance.</li>
+                    </ul>
                 </div>
               </div>
             </div>
@@ -368,13 +369,13 @@ function App() {
                 <div className="md:col-span-3 bg-surface/50 p-6 rounded-xl border border-border">
                   <h3 className="text-xl font-bold mb-1">IT Systems Administrator</h3>
                   <p className="text-muted text-sm mb-4">Makkah, Saudi Arabia</p>
-                  <ul className="space-y-2 text-sm text-muted list-disc list-inside">
-                    <li>Sole IT administrator managing the full IT infrastructure independently for 9 consecutive years.</li>
-                    <li>Administered Windows Server environments and Active Directory Domain Services (AD DS).</li>
-                    <li>Managed virtualization platforms including VMware and Hyper-V, ensuring high availability.</li>
-                    <li>Implemented and maintained comprehensive backup and disaster recovery solutions.</li>
-                    <li>Troubleshot network and system issues ensuring maximum uptime and business continuity.</li>
-                  </ul>
+                  <ul className="space-y-3 text-sm text-muted list-outside ml-4 list-disc marker:text-primary">
+                      <li className="pl-1"><strong className="text-text font-semibold">Sole IT Infrastructure Leadership:</strong> Acted as the sole IT Administrator for 9 consecutive years, independently architecting, managing, and scaling the entire corporate IT infrastructure to directly align with business growth and operational demands.</li>
+                      <li className="pl-1"><strong className="text-text font-semibold">Windows Server & Domain Architecture:</strong> Architected and fully administered robust Windows Server environments, driving the core Active Directory Domain Services (AD DS), Group Policy Objects (GPOs), and centralized domain security.</li>
+                      <li className="pl-1"><strong className="text-text font-semibold">Enterprise Virtualization:</strong> Deployed and managed highly available virtualization platforms utilizing industry-leading hypervisors including VMware and Microsoft Hyper-V, significantly optimizing hardware resource utilization and server redundancy.</li>
+                      <li className="pl-1"><strong className="text-text font-semibold">Business Continuity & Disaster Recovery:</strong> Engineered and continuously maintained comprehensive backup and disaster recovery frameworks, guaranteeing data integrity and rapid restoration capabilities in the event of catastrophic hardware failure.</li>
+                      <li className="pl-1"><strong className="text-text font-semibold">Network Engineering & Diagnostics:</strong> Proactively monitored and troubleshot advanced network topology issues, actively mitigating latency and routing failures to ensure 99.9% uptime and uninterrupted business continuity.</li>
+                    </ul>
                 </div>
               </div>
             </div>
