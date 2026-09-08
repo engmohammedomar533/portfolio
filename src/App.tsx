@@ -301,15 +301,15 @@ function App() {
                 <div className="md:col-span-3 bg-surface p-6 rounded-xl border border-border">
                   <h3 className="text-xl font-bold mb-1">IT Systems Administrator & Developer</h3>
                   <p className="text-muted text-sm mb-4">Remote - Makkah Saudi Arabia & Tanta Branch</p>
-                  <ul className="space-y-2 text-sm text-muted list-disc list-inside">
-                    <li>Designed and deployed a complete Active Directory-based infrastructure for 16 employees, including centralized authentication, secure file services, printer deployment, attendance management, backup, and disaster recovery solutions.</li>
-                    <li>Deployed and administer Windows Server 2025 managing AD DS, DNS, centralized DHCP, and restricted file shares with strict NTFS security models.</li>
-                    <li>Designed and implemented a resilient network topology via Omada SDN, configuring TP-Link ER605 routers, SG2218P managed switches, EAP620 HD access points, and VLAN segmentation.</li>
-                    <li>Engineered a comprehensive 4-layer Disaster Recovery strategy: RAID1 software mirroring, Volume Shadow Copies, daily Bare Metal Windows Server Backups, and external backup repositories.</li>
-                    <li>Configured ZKTeco BioTime 9.0.6 attendance system, syncing MB5000 biometric terminals in real-time.</li>
-                    <li>Developed full-stack web application using Python (FastAPI), PostgreSQL, and React with Git version control.</li>
-                    <li>Provisioned and managed Linux-based cloud infrastructure (DigitalOcean droplets) to host custom enterprise PMS.</li>
-                  </ul>
+                  <ul className="space-y-3 text-sm text-muted list-outside ml-4 list-disc marker:text-primary">
+                      <li className="pl-1"><strong className="text-text font-semibold">Full-Stack Software Engineering (Enterprise PMS):</strong> Architected and deployed a highly available custom Project Management System (PMS) replacing legacy solutions. Developed the robust backend using Python (FastAPI), SQLAlchemy, and PostgreSQL, with a responsive React and Tailwind CSS frontend, hosted on DigitalOcean cloud infrastructure.</li>
+                      <li className="pl-1"><strong className="text-text font-semibold">Internal IT Ticketing System:</strong> Engineered a comprehensive IT Helpdesk application from scratch utilizing Next.js 14 (App Router), React, and Tailwind CSS. Implemented advanced features including Role-Based Access Control (RBAC), Prisma ORM integrating with Vercel Postgres, Vercel Blob for diagnostic image storage, and automated email alerts via Resend.</li>
+                      <li className="pl-1"><strong className="text-text font-semibold">Corporate Web Presence:</strong> Developed and continuously manage the company's high-performance public corporate website using Jamstack methodologies, leveraging the Vercel Edge Network for secure, global low-latency content delivery.</li>
+                      <li className="pl-1"><strong className="text-text font-semibold">Active Directory & Server Administration:</strong> Designed and deployed a complete AD DS infrastructure on Windows Server 2025 bridging cross-branch operations (Makkah Headquarters & Egypt Branch). Administer centralized DNS, DHCP, remote access, and highly secure file services enforced with strict NTFS permission models.</li>
+                      <li className="pl-1"><strong className="text-text font-semibold">Enterprise Networking & SDN:</strong> Implemented a highly resilient network topology via Omada SDN (TP-Link ER605, SG2218P, EAP620 HD) with strict VLAN segmentation. Simultaneously managed the migration of the Makkah HQ to a centralized Ruijie Cloud architecture, provisioning 9 access points, 5 switches, and enterprise edge routing for 50+ end-users.</li>
+                      <li className="pl-1"><strong className="text-text font-semibold">Disaster Recovery & Data Security:</strong> Engineered a comprehensive 4-layer Disaster Recovery strategy incorporating RAID1 software mirroring, Volume Shadow Copies (VSS), daily Bare Metal Windows Server Backups, and offsite external repositories to guarantee business continuity and zero data loss.</li>
+                      <li className="pl-1"><strong className="text-text font-semibold">Biometric Access & Identity Management:</strong> Configured and actively administer the ZKTeco BioTime 9.0.6 enterprise attendance system, securely syncing multiple MB5000 biometric terminals in real-time across geographically distributed regional branches.</li>
+                    </ul>
                 </div>
               </div>
             </div>
