@@ -27,7 +27,7 @@ function App() {
       {/* Navbar */}
       <nav className="fixed w-full top-0 z-50 bg-background/80 backdrop-blur-sm border-b border-surface transition-colors duration-300">
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-          <div className="flex items-center gap-3"><img src="/logo.png" alt="M Y Logo" className="h-10 w-10 rounded-lg object-contain bg-slate-900" /><span className="font-bold text-xl tracking-tight">M. Younis</span></div>
+          <span className="font-bold text-xl tracking-tight"><span className="text-primary">&gt;_</span> M.Younis</span>
           <div className="hidden md:flex gap-6 text-sm font-medium text-muted">
             <a href="#" className="hover:text-primary transition-colors">Home</a>
             <a href="#about" className="hover:text-primary transition-colors">About</a>
@@ -687,7 +687,7 @@ function App() {
       <footer id="contact" className="border-t border-surface bg-surface/30">
         <div className="max-w-6xl mx-auto px-6 py-12 flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
-            <div className="flex items-center gap-3"><img src="/logo.png" alt="M Y Logo" className="h-10 w-10 rounded-lg object-contain bg-slate-900" /><span className="font-bold text-xl tracking-tight">M. Younis</span></div>
+            <span className="font-bold text-xl tracking-tight"><span className="text-primary">&gt;_</span> M.Younis</span>
             <p className="text-sm text-muted mt-2">© 2026 Mohammed Younis. Architected for the Cloud.</p>
           </div>
           <div className="flex gap-4">
