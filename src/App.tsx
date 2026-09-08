@@ -69,12 +69,10 @@ function App() {
             </div>
             <h1 className="text-5xl md:text-7xl font-bold leading-tight">
               Hi, I'm <span className="text-primary">Mohammed</span>. <br/>
-              I build and secure cloud infrastructure.
+              I architect enterprise software and scalable cloud infrastructure.
             </h1>
             <p className="text-lg text-muted max-w-2xl leading-relaxed">
-              Senior Systems Administrator with 10+ years of enterprise experience. 
-              Specializing in Linux, Windows Server, Networking, and deploying full-stack 
-              SaaS architectures on robust cloud environments (DigitalOcean, Azure).
+              Hybrid IT Infrastructure Engineer and Full-Stack Developer with over 10 years of enterprise experience. I specialize in bridging the gap between heavy enterprise administration (Windows Server, Active Directory, SDN) and modern web engineering (Next.js, React, FastAPI) to deliver highly resilient, automated business solutions.
             </p>
             <div className="flex gap-4 pt-4">
               <a href="#contact" className="flex items-center gap-2 px-6 py-3 bg-primary text-background font-bold rounded hover:bg-sky-300 transition-all">
