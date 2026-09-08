@@ -23,11 +23,17 @@ function App() {
 
   return (
     <div className="min-h-screen bg-background text-text selection:bg-primary selection:text-background transition-colors duration-300">
+
+      {/* Background Watermark */}
+      <div className="fixed inset-0 pointer-events-none flex items-center justify-center z-0 overflow-hidden opacity-[0.03] dark:opacity-[0.05]">
+        <img src="/logo.png" alt="Watermark" className="w-[150%] md:w-[80%] max-w-4xl object-contain grayscale mix-blend-luminosity" />
+      </div>
+
       
       {/* Navbar */}
       <nav className="fixed w-full top-0 z-50 bg-background/80 backdrop-blur-sm border-b border-surface transition-colors duration-300">
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-          <span className="font-bold text-xl tracking-tight"><span className="text-primary">&gt;_</span> M.Younis</span>
+          <div className="flex items-center gap-3 relative z-10"><img src="/logo.png" alt="Logo" className="h-10 w-10 md:h-12 md:w-12 rounded-xl object-cover shadow-sm ring-1 ring-border/50" /><span className="font-bold text-xl tracking-tight"><span className="text-primary">&gt;_</span> M.Younis</span></div>
           <div className="hidden md:flex gap-6 text-sm font-medium text-muted">
             <a href="#" className="hover:text-primary transition-colors">Home</a>
             <a href="#about" className="hover:text-primary transition-colors">About</a>
@@ -50,7 +56,7 @@ function App() {
         </div>
       </nav>
 
-      <main className="pt-24 pb-12">
+      <main className="pt-24 pb-12 relative z-10">
         {/* Hero Section */}
         <section id="about" className="max-w-6xl mx-auto px-6 py-20 md:py-32 flex flex-col md:flex-row items-center gap-12">
           <div className="flex-1 space-y-6">
@@ -684,10 +690,10 @@ function App() {
 
       </main>
 
-      <footer id="contact" className="border-t border-surface bg-surface/30">
+      <footer id="contact" className="border-t border-surface bg-surface/30 relative z-10">
         <div className="max-w-6xl mx-auto px-6 py-12 flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
-            <span className="font-bold text-xl tracking-tight"><span className="text-primary">&gt;_</span> M.Younis</span>
+            <div className="flex items-center gap-3 relative z-10"><img src="/logo.png" alt="Logo" className="h-10 w-10 md:h-12 md:w-12 rounded-xl object-cover shadow-sm ring-1 ring-border/50" /><span className="font-bold text-xl tracking-tight"><span className="text-primary">&gt;_</span> M.Younis</span></div>
             <p className="text-sm text-muted mt-2">© 2026 Mohammed Younis. Architected for the Cloud.</p>
           </div>
           <div className="flex gap-4">
