@@ -163,36 +163,49 @@ function App() {
             </div>
 
             {/* Project 2 */}
-            <div className="bg-surface rounded-xl p-8 border border-border hover:border-primary/50 transition-colors group relative overflow-hidden">
-              <div className="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
-                <Server size={100} />
+              <div className="bg-surface rounded-xl p-8 border border-border hover:border-primary/50 transition-colors group relative overflow-hidden">
+                <div className="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
+                  <Terminal size={100} />
+                </div>
+                <h3 className="text-2xl font-bold mb-3">Internal IT Helpdesk System</h3>
+                  <div className="text-muted mb-6 space-y-4 text-sm leading-relaxed">
+                    <p>Engineered a highly-scalable IT ticketing system tailored for multi-branch enterprise support (Makkah & Egypt). Features a robust Role-Based Access Control (RBAC) enabling administrators to track, document, and efficiently resolve corporate IT incidents.</p>
+                    <div className="space-y-1">
+                      <strong className="text-slate-200 dark:text-slate-100">Technical Architecture:</strong>
+                      <ul className="list-disc list-inside space-y-1 ml-2 text-muted/90">
+                        <li><strong className="text-text">Core Framework:</strong> Developed leveraging Next.js 14 (App Router) and React Server Components for highly optimized server-side rendering.</li>
+                        <li><strong className="text-text">Database Layer:</strong> Integrated Prisma ORM with Vercel Postgres, utilizing strongly typed schemas for rock-solid data integrity.</li>
+                        <li><strong className="text-text">Storage & Automation:</strong> Integrated @vercel/blob for secure diagnostic image uploads and Resend API for automated real-time email dispatching.</li>
+                        <li><strong className="text-text">UI/UX Design:</strong> Styled with Tailwind CSS and Shadcn UI, featuring customized responsive dashboards and interactive modal workflows.</li>
+                      </ul>
+                    </div>
+                    <p className="italic text-xs text-muted/70 mt-4 border-l-2 border-primary/50 pl-2">Note: Source code is secured in a private enterprise repository. A live production portal is available below.</p>
+                  </div>
+                <div className="space-y-3 mb-8">
+                  <div className="flex items-center gap-3 text-sm">
+                    <Server size={16} className="text-primary"/>
+                    <span>Next.js 14 App Router & Vercel Postgres</span>
+                  </div>
+                  <div className="flex items-center gap-3 text-sm">
+                    <Cloud size={16} className="text-primary"/>
+                    <span>Prisma ORM & @vercel/blob Storage</span>
+                  </div>
+                  <div className="flex items-center gap-3 text-sm">
+                    <Terminal size={16} className="text-primary"/>
+                    <span>React + Tailwind CSS + Shadcn UI</span>
+                  </div>
+                </div>
+                <div className="flex flex-wrap items-center gap-4 mt-2">
+                  <a href="https://helpdesk.ososalbnaa.com" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-primary font-medium hover:underline">
+                    Visit Live Portal <ExternalLink size={16}/>
+                  </a>
+                  <div className="inline-flex items-center gap-2 text-yellow-400/80 font-medium px-3 py-1.5 bg-yellow-400/10 rounded-full text-sm">
+                    <Lock size={14}/> Private Enterprise Repo
+                  </div>
+                </div>
               </div>
-              <h3 className="text-2xl font-bold mb-3">Osos Corporate Platform</h3>
-              <p className="text-muted mb-6">
-                Engineered and deployed a modern, lightning-fast public web presence using Jamstack methodology.
-                Utilized Vercel Edge CDN for global performance with zero monthly hosting costs.
-              </p>
-              <div className="space-y-3 mb-8">
-                <div className="flex items-center gap-3 text-sm">
-                  <Cloud size={16} className="text-primary"/>
-                  <span>Vercel Edge Network</span>
-                </div>
-                <div className="flex items-center gap-3 text-sm">
-                  <Shield size={16} className="text-primary"/>
-                  <span>Automated CI/CD via GitHub</span>
-                </div>
-                <div className="flex items-center gap-3 text-sm">
-                  <Terminal size={16} className="text-primary"/>
-                  <span>React + SEO Optimization</span>
-                </div>
-              </div>
-              <a href="https://ososalbnaa.com" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-primary font-medium hover:underline">
-                Visit Live Site <ExternalLink size={16}/>
-              </a>
-            </div>
-          
 
-            {/* Project 3 */}
+          </div>{/* Project 3 */}
             <div className="bg-surface rounded-xl p-8 border border-border hover:border-primary/50 transition-colors group relative overflow-hidden">
               <div className="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
                 <Shield size={100} />
@@ -254,49 +267,36 @@ function App() {
             </div>
 
               {/* Project 5 */}
-              <div className="bg-surface rounded-xl p-8 border border-border hover:border-primary/50 transition-colors group relative overflow-hidden">
-                <div className="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
-                  <Terminal size={100} />
+            <div className="bg-surface rounded-xl p-8 border border-border hover:border-primary/50 transition-colors group relative overflow-hidden">
+              <div className="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
+                <Server size={100} />
+              </div>
+              <h3 className="text-2xl font-bold mb-3">Osos Corporate Platform</h3>
+              <p className="text-muted mb-6">
+                Engineered and deployed a modern, lightning-fast public web presence using Jamstack methodology.
+                Utilized Vercel Edge CDN for global performance with zero monthly hosting costs.
+              </p>
+              <div className="space-y-3 mb-8">
+                <div className="flex items-center gap-3 text-sm">
+                  <Cloud size={16} className="text-primary"/>
+                  <span>Vercel Edge Network</span>
                 </div>
-                <h3 className="text-2xl font-bold mb-3">Internal IT Helpdesk System</h3>
-                  <div className="text-muted mb-6 space-y-4 text-sm leading-relaxed">
-                    <p>Engineered a highly-scalable IT ticketing system tailored for multi-branch enterprise support (Makkah & Egypt). Features a robust Role-Based Access Control (RBAC) enabling administrators to track, document, and efficiently resolve corporate IT incidents.</p>
-                    <div className="space-y-1">
-                      <strong className="text-slate-200 dark:text-slate-100">Technical Architecture:</strong>
-                      <ul className="list-disc list-inside space-y-1 ml-2 text-muted/90">
-                        <li><strong className="text-text">Core Framework:</strong> Developed leveraging Next.js 14 (App Router) and React Server Components for highly optimized server-side rendering.</li>
-                        <li><strong className="text-text">Database Layer:</strong> Integrated Prisma ORM with Vercel Postgres, utilizing strongly typed schemas for rock-solid data integrity.</li>
-                        <li><strong className="text-text">Storage & Automation:</strong> Integrated @vercel/blob for secure diagnostic image uploads and Resend API for automated real-time email dispatching.</li>
-                        <li><strong className="text-text">UI/UX Design:</strong> Styled with Tailwind CSS and Shadcn UI, featuring customized responsive dashboards and interactive modal workflows.</li>
-                      </ul>
-                    </div>
-                    <p className="italic text-xs text-muted/70 mt-4 border-l-2 border-primary/50 pl-2">Note: Source code is secured in a private enterprise repository. A live production portal is available below.</p>
-                  </div>
-                <div className="space-y-3 mb-8">
-                  <div className="flex items-center gap-3 text-sm">
-                    <Server size={16} className="text-primary"/>
-                    <span>Next.js 14 App Router & Vercel Postgres</span>
-                  </div>
-                  <div className="flex items-center gap-3 text-sm">
-                    <Cloud size={16} className="text-primary"/>
-                    <span>Prisma ORM & @vercel/blob Storage</span>
-                  </div>
-                  <div className="flex items-center gap-3 text-sm">
-                    <Terminal size={16} className="text-primary"/>
-                    <span>React + Tailwind CSS + Shadcn UI</span>
-                  </div>
+                <div className="flex items-center gap-3 text-sm">
+                  <Shield size={16} className="text-primary"/>
+                  <span>Automated CI/CD via GitHub</span>
                 </div>
-                <div className="flex flex-wrap items-center gap-4 mt-2">
-                  <a href="https://helpdesk.ososalbnaa.com" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-primary font-medium hover:underline">
-                    Visit Live Portal <ExternalLink size={16}/>
-                  </a>
-                  <div className="inline-flex items-center gap-2 text-yellow-400/80 font-medium px-3 py-1.5 bg-yellow-400/10 rounded-full text-sm">
-                    <Lock size={14}/> Private Enterprise Repo
-                  </div>
+                <div className="flex items-center gap-3 text-sm">
+                  <Terminal size={16} className="text-primary"/>
+                  <span>React + SEO Optimization</span>
                 </div>
               </div>
+              <a href="https://ososalbnaa.com" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-primary font-medium hover:underline">
+                Visit Live Site <ExternalLink size={16}/>
+              </a>
+            </div>
+          
 
-          </div>
+            
           </section>
 
           {/* Experience */}
