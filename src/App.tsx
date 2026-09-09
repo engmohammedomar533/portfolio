@@ -129,10 +129,20 @@ function App() {
                 <Cloud size={100} />
               </div>
               <h3 className="text-2xl font-bold mb-3">Osos PMS (Enterprise SaaS)</h3>
-              <p className="text-muted mb-6">
-                Architected, developed, and deployed a highly available custom Project Management System for an engineering consultancy. 
-                Delivers enterprise-grade project management capabilities through a bespoke, high-performance Cloud infrastructure.
-              </p>
+                <div className="text-muted mb-6 space-y-4 text-sm leading-relaxed">
+                  <p>Architected and deployed a highly available custom Project Management System from scratch to replace legacy infrastructure. Acting as a scalable Enterprise SaaS, this system manages critical engineering workflows, operational milestones, and cross-branch collaboration.</p>
+                  <div className="space-y-1">
+                    <strong className="text-slate-200 dark:text-slate-100">Technical Architecture:</strong>
+                    <ul className="list-disc list-inside space-y-1 ml-2 text-muted/90">
+                      <li><strong className="text-text">Backend:</strong> Built with Python (FastAPI) and SQLAlchemy for high-concurrency routing and strict validation.</li>
+                      <li><strong className="text-text">Database:</strong> Managed PostgreSQL with automated Point-in-Time Recovery (PITR).</li>
+                      <li><strong className="text-text">Frontend:</strong> Fully responsive React SPA with Tailwind CSS for complex dashboard visualizations.</li>
+                      <li><strong className="text-text">Infrastructure:</strong> Provisioned on DigitalOcean Droplets with Nginx reverse proxying and automated SSL.</li>
+                      <li><strong className="text-text">Security:</strong> Enterprise-grade JWT authentication and rigorous Role-Based Access Control (RBAC).</li>
+                    </ul>
+                  </div>
+                  <p className="italic text-xs text-muted/70 mt-4 border-l-2 border-primary/50 pl-2">Note: Source code is secured in a private enterprise repository to protect proprietary business logic.</p>
+                </div>
               <div className="space-y-3 mb-8">
                 <div className="flex items-center gap-3 text-sm">
                   <Server size={16} className="text-primary"/>
@@ -249,9 +259,19 @@ function App() {
                   <Terminal size={100} />
                 </div>
                 <h3 className="text-2xl font-bold mb-3">Internal IT Helpdesk System</h3>
-                <p className="text-muted mb-6">
-                  Engineered a comprehensive internal IT ticketing system with role-based access control, real-time status tracking, automated email alerts via Resend, and full photographic documentation for hardware resolutions.
-                </p>
+                  <div className="text-muted mb-6 space-y-4 text-sm leading-relaxed">
+                    <p>Engineered a highly-scalable IT ticketing system tailored for multi-branch enterprise support (Makkah & Egypt). Features a robust Role-Based Access Control (RBAC) enabling administrators to track, document, and efficiently resolve corporate IT incidents.</p>
+                    <div className="space-y-1">
+                      <strong className="text-slate-200 dark:text-slate-100">Technical Architecture:</strong>
+                      <ul className="list-disc list-inside space-y-1 ml-2 text-muted/90">
+                        <li><strong className="text-text">Core Framework:</strong> Developed leveraging Next.js 14 (App Router) and React Server Components for highly optimized server-side rendering.</li>
+                        <li><strong className="text-text">Database Layer:</strong> Integrated Prisma ORM with Vercel Postgres, utilizing strongly typed schemas for rock-solid data integrity.</li>
+                        <li><strong className="text-text">Storage & Automation:</strong> Integrated @vercel/blob for secure diagnostic image uploads and Resend API for automated real-time email dispatching.</li>
+                        <li><strong className="text-text">UI/UX Design:</strong> Styled with Tailwind CSS and Shadcn UI, featuring customized responsive dashboards and interactive modal workflows.</li>
+                      </ul>
+                    </div>
+                    <p className="italic text-xs text-muted/70 mt-4 border-l-2 border-primary/50 pl-2">Note: Source code is secured in a private enterprise repository. A live production portal is available below.</p>
+                  </div>
                 <div className="space-y-3 mb-8">
                   <div className="flex items-center gap-3 text-sm">
                     <Server size={16} className="text-primary"/>
