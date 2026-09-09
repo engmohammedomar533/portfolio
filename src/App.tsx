@@ -505,7 +505,7 @@ function App() {
                   <span className="text-xs font-bold px-2 py-1 bg-yellow-500/20 text-yellow-400 rounded">In Progress</span>
                 </div>
                 <ul className="space-y-2 text-sm text-muted">
-                  <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-yellow-400"></div> AZ-900: Fundamentals</li>
+                  <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-green-400"></div> AZ-900: Fundamentals</li>
                   <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-muted"></div> AZ-104: Administration</li>
                   <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-muted"></div> AZ-305: Solutions Architect</li>
                 </ul>
